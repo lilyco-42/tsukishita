@@ -14,6 +14,29 @@ use std::path::PathBuf;
 use std::sync::Arc;
 use tokio::fs;
 
+// ── Embedded static assets (guaranteed available) ────
+
+const INDEX_HTML: &str = include_str!("../../../index.html");
+const GAME_JS: &str = include_str!("../../../game.js");
+const STYLES_CSS: &str = include_str!("../../../styles.css");
+const ITEMS_DATA_JS: &str = include_str!("../../../items-data.js");
+const PROGRESSION_DATA_JS: &str = include_str!("../../../progression-data.js");
+const CHEST_DATA_JS: &str = include_str!("../../../chest-data.js");
+const THREE_MODULE_JS: &[u8] = include_bytes!("../../../vendor/three.module.js");
+
+fn embedded_file(path: &str) -> Option<(Vec<u8>, &'static str)> {
+    match path {
+        "index.html" | "/" | "" => Some((INDEX_HTML.as_bytes().to_vec(), "text/html; charset=utf-8")),
+        "game.js" => Some((GAME_JS.as_bytes().to_vec(), "text/javascript; charset=utf-8")),
+        "styles.css" => Some((STYLES_CSS.as_bytes().to_vec(), "text/css; charset=utf-8")),
+        "items-data.js" => Some((ITEMS_DATA_JS.as_bytes().to_vec(), "text/javascript; charset=utf-8")),
+        "progression-data.js" => Some((PROGRESSION_DATA_JS.as_bytes().to_vec(), "text/javascript; charset=utf-8")),
+        "chest-data.js" => Some((CHEST_DATA_JS.as_bytes().to_vec(), "text/javascript; charset=utf-8")),
+        "vendor/three.module.js" => Some((THREE_MODULE_JS.to_vec(), "text/javascript; charset=utf-8")),
+        _ => None,
+    }
+}
+
 // ─────────────────────────────────────────────────────
 // Types
 // ─────────────────────────────────────────────────────
@@ -147,23 +170,31 @@ async fn serve_static(
     req: axum::http::Request<Body>,
 ) -> Response {
     let path = req.uri().path().trim_start_matches('/');
-    let file_path = if path.is_empty() {
-        state.static_dir.join("index.html")
-    } else {
-        state.static_dir.join(path)
-    };
-    match fs::read(&file_path).await {
-        Ok(data) => {
-            let mime = mime_for(&file_path);
-            Response::builder()
-                .status(StatusCode::OK)
-                .header(header::CONTENT_TYPE, mime)
-                .header(header::CACHE_CONTROL, "no-store")
-                .body(Body::from(data))
-                .unwrap()
-        }
-        Err(_) => json_response(StatusCode::NOT_FOUND, &json!({"error":"Not found"})),
+    let path = if path.is_empty() { "index.html" } else { path };
+
+    // Try embedded first
+    if let Some((data, mime)) = embedded_file(path) {
+        return Response::builder()
+            .status(StatusCode::OK)
+            .header(header::CONTENT_TYPE, mime)
+            .header(header::CACHE_CONTROL, "no-store")
+            .body(Body::from(data))
+            .unwrap();
     }
+
+    // Fall back to disk for audio files etc.
+    let file_path = state.static_dir.join(path);
+    if let Ok(data) = fs::read(&file_path).await {
+        let mime = mime_for(&file_path);
+        return Response::builder()
+            .status(StatusCode::OK)
+            .header(header::CONTENT_TYPE, mime)
+            .header(header::CACHE_CONTROL, "no-store")
+            .body(Body::from(data))
+            .unwrap();
+    }
+
+    json_response(StatusCode::NOT_FOUND, &json!({"error":"Not found"}))
 }
 
 fn mime_for(path: &PathBuf) -> &'static str {
