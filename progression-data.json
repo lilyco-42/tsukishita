@@ -1,0 +1,510 @@
+{
+  "plaqueExperience": {
+    "(無)": 0,
+    "荒壱": 5,
+    "荒弐": 10,
+    "澄壱": 20,
+    "澄弐": 30,
+    "巧壱": 50,
+    "巧弐": 60,
+    "妙壱": 80,
+    "妙弐": 90,
+    "粋壱": 110,
+    "粋弐": 130,
+    "雅壱": 170,
+    "雅弐": 190,
+    "極": 300
+  },
+  "pathRequirements": [
+    {
+      "realm": "荒",
+      "level": 1,
+      "required": 0,
+      "index": 0,
+      "label": "荒・初段"
+    },
+    {
+      "realm": "荒",
+      "level": 2,
+      "required": 10,
+      "index": 1,
+      "label": "荒・二段"
+    },
+    {
+      "realm": "荒",
+      "level": 3,
+      "required": 30,
+      "index": 2,
+      "label": "荒・三段"
+    },
+    {
+      "realm": "荒",
+      "level": 4,
+      "required": 100,
+      "index": 3,
+      "label": "荒・四段"
+    },
+    {
+      "realm": "荒",
+      "level": 5,
+      "required": 300,
+      "index": 4,
+      "label": "荒・五段"
+    },
+    {
+      "realm": "荒",
+      "level": 6,
+      "required": 500,
+      "index": 5,
+      "label": "荒・六段"
+    },
+    {
+      "realm": "荒",
+      "level": 7,
+      "required": 700,
+      "index": 6,
+      "label": "荒・七段"
+    },
+    {
+      "realm": "荒",
+      "level": 8,
+      "required": 900,
+      "index": 7,
+      "label": "荒・八段"
+    },
+    {
+      "realm": "荒",
+      "level": 9,
+      "required": 1100,
+      "index": 8,
+      "label": "荒・九段"
+    },
+    {
+      "realm": "荒",
+      "level": 10,
+      "required": 1300,
+      "index": 9,
+      "label": "荒・十段"
+    },
+    {
+      "realm": "澄",
+      "level": 1,
+      "required": 2000,
+      "index": 10,
+      "label": "澄・初段"
+    },
+    {
+      "realm": "澄",
+      "level": 2,
+      "required": 2400,
+      "index": 11,
+      "label": "澄・二段"
+    },
+    {
+      "realm": "澄",
+      "level": 3,
+      "required": 2800,
+      "index": 12,
+      "label": "澄・三段"
+    },
+    {
+      "realm": "澄",
+      "level": 4,
+      "required": 3200,
+      "index": 13,
+      "label": "澄・四段"
+    },
+    {
+      "realm": "澄",
+      "level": 5,
+      "required": 3600,
+      "index": 14,
+      "label": "澄・五段"
+    },
+    {
+      "realm": "澄",
+      "level": 6,
+      "required": 4000,
+      "index": 15,
+      "label": "澄・六段"
+    },
+    {
+      "realm": "澄",
+      "level": 7,
+      "required": 4400,
+      "index": 16,
+      "label": "澄・七段"
+    },
+    {
+      "realm": "澄",
+      "level": 8,
+      "required": 4800,
+      "index": 17,
+      "label": "澄・八段"
+    },
+    {
+      "realm": "澄",
+      "level": 9,
+      "required": 5200,
+      "index": 18,
+      "label": "澄・九段"
+    },
+    {
+      "realm": "澄",
+      "level": 10,
+      "required": 5600,
+      "index": 19,
+      "label": "澄・十段"
+    },
+    {
+      "realm": "巧",
+      "level": 1,
+      "required": 6000,
+      "index": 20,
+      "label": "巧・初段"
+    },
+    {
+      "realm": "巧",
+      "level": 2,
+      "required": 6600,
+      "index": 21,
+      "label": "巧・二段"
+    },
+    {
+      "realm": "巧",
+      "level": 3,
+      "required": 7200,
+      "index": 22,
+      "label": "巧・三段"
+    },
+    {
+      "realm": "巧",
+      "level": 4,
+      "required": 7800,
+      "index": 23,
+      "label": "巧・四段"
+    },
+    {
+      "realm": "巧",
+      "level": 5,
+      "required": 8400,
+      "index": 24,
+      "label": "巧・五段"
+    },
+    {
+      "realm": "巧",
+      "level": 6,
+      "required": 9000,
+      "index": 25,
+      "label": "巧・六段"
+    },
+    {
+      "realm": "巧",
+      "level": 7,
+      "required": 9600,
+      "index": 26,
+      "label": "巧・七段"
+    },
+    {
+      "realm": "巧",
+      "level": 8,
+      "required": 10200,
+      "index": 27,
+      "label": "巧・八段"
+    },
+    {
+      "realm": "巧",
+      "level": 9,
+      "required": 10800,
+      "index": 28,
+      "label": "巧・九段"
+    },
+    {
+      "realm": "巧",
+      "level": 10,
+      "required": 11400,
+      "index": 29,
+      "label": "巧・十段"
+    },
+    {
+      "realm": "妙",
+      "level": 1,
+      "required": 14000,
+      "index": 30,
+      "label": "妙・初段"
+    },
+    {
+      "realm": "妙",
+      "level": 2,
+      "required": 15000,
+      "index": 31,
+      "label": "妙・二段"
+    },
+    {
+      "realm": "妙",
+      "level": 3,
+      "required": 16000,
+      "index": 32,
+      "label": "妙・三段"
+    },
+    {
+      "realm": "妙",
+      "level": 4,
+      "required": 17000,
+      "index": 33,
+      "label": "妙・四段"
+    },
+    {
+      "realm": "妙",
+      "level": 5,
+      "required": 18000,
+      "index": 34,
+      "label": "妙・五段"
+    },
+    {
+      "realm": "妙",
+      "level": 6,
+      "required": 19000,
+      "index": 35,
+      "label": "妙・六段"
+    },
+    {
+      "realm": "妙",
+      "level": 7,
+      "required": 20000,
+      "index": 36,
+      "label": "妙・七段"
+    },
+    {
+      "realm": "妙",
+      "level": 8,
+      "required": 21000,
+      "index": 37,
+      "label": "妙・八段"
+    },
+    {
+      "realm": "妙",
+      "level": 9,
+      "required": 22000,
+      "index": 38,
+      "label": "妙・九段"
+    },
+    {
+      "realm": "妙",
+      "level": 10,
+      "required": 23000,
+      "index": 39,
+      "label": "妙・十段"
+    },
+    {
+      "realm": "粋",
+      "level": 1,
+      "required": 28000,
+      "index": 40,
+      "label": "粋・初段"
+    },
+    {
+      "realm": "粋",
+      "level": 2,
+      "required": 29600,
+      "index": 41,
+      "label": "粋・二段"
+    },
+    {
+      "realm": "粋",
+      "level": 3,
+      "required": 31200,
+      "index": 42,
+      "label": "粋・三段"
+    },
+    {
+      "realm": "粋",
+      "level": 4,
+      "required": 32800,
+      "index": 43,
+      "label": "粋・四段"
+    },
+    {
+      "realm": "粋",
+      "level": 5,
+      "required": 34400,
+      "index": 44,
+      "label": "粋・五段"
+    },
+    {
+      "realm": "粋",
+      "level": 6,
+      "required": 36000,
+      "index": 45,
+      "label": "粋・六段"
+    },
+    {
+      "realm": "粋",
+      "level": 7,
+      "required": 37600,
+      "index": 46,
+      "label": "粋・七段"
+    },
+    {
+      "realm": "粋",
+      "level": 8,
+      "required": 39200,
+      "index": 47,
+      "label": "粋・八段"
+    },
+    {
+      "realm": "粋",
+      "level": 9,
+      "required": 40800,
+      "index": 48,
+      "label": "粋・九段"
+    },
+    {
+      "realm": "粋",
+      "level": 10,
+      "required": 42400,
+      "index": 49,
+      "label": "粋・十段"
+    },
+    {
+      "realm": "雅",
+      "level": 1,
+      "required": 50000,
+      "index": 50,
+      "label": "雅・初段"
+    },
+    {
+      "realm": "雅",
+      "level": 2,
+      "required": 53500,
+      "index": 51,
+      "label": "雅・二段"
+    },
+    {
+      "realm": "雅",
+      "level": 3,
+      "required": 57000,
+      "index": 52,
+      "label": "雅・三段"
+    },
+    {
+      "realm": "雅",
+      "level": 4,
+      "required": 60500,
+      "index": 53,
+      "label": "雅・四段"
+    },
+    {
+      "realm": "雅",
+      "level": 5,
+      "required": 64000,
+      "index": 54,
+      "label": "雅・五段"
+    },
+    {
+      "realm": "雅",
+      "level": 6,
+      "required": 67500,
+      "index": 55,
+      "label": "雅・六段"
+    },
+    {
+      "realm": "雅",
+      "level": 7,
+      "required": 71000,
+      "index": 56,
+      "label": "雅・七段"
+    },
+    {
+      "realm": "雅",
+      "level": 8,
+      "required": 74500,
+      "index": 57,
+      "label": "雅・八段"
+    },
+    {
+      "realm": "雅",
+      "level": 9,
+      "required": 78000,
+      "index": 58,
+      "label": "雅・九段"
+    },
+    {
+      "realm": "雅",
+      "level": 10,
+      "required": 81500,
+      "index": 59,
+      "label": "雅・十段"
+    },
+    {
+      "realm": "極",
+      "level": 1,
+      "required": 110000,
+      "index": 60,
+      "label": "極・初段"
+    },
+    {
+      "realm": "極",
+      "level": 2,
+      "required": 120000,
+      "index": 61,
+      "label": "極・二段"
+    },
+    {
+      "realm": "極",
+      "level": 3,
+      "required": 130000,
+      "index": 62,
+      "label": "極・三段"
+    },
+    {
+      "realm": "極",
+      "level": 4,
+      "required": 140000,
+      "index": 63,
+      "label": "極・四段"
+    },
+    {
+      "realm": "極",
+      "level": 5,
+      "required": 150000,
+      "index": 64,
+      "label": "極・五段"
+    },
+    {
+      "realm": "極",
+      "level": 6,
+      "required": 160000,
+      "index": 65,
+      "label": "極・六段"
+    },
+    {
+      "realm": "極",
+      "level": 7,
+      "required": 170000,
+      "index": 66,
+      "label": "極・七段"
+    },
+    {
+      "realm": "極",
+      "level": 8,
+      "required": 180000,
+      "index": 67,
+      "label": "極・八段"
+    },
+    {
+      "realm": "極",
+      "level": 9,
+      "required": 190000,
+      "index": 68,
+      "label": "極・九段"
+    },
+    {
+      "realm": "極",
+      "level": 10,
+      "required": 200000,
+      "index": 69,
+      "label": "極・十段"
+    }
+  ]
+}

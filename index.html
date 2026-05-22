@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>月下祓行 - 戰鬥原型</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="game-shell" aria-label="月下祓行 playable prototype">
+      <div id="scene3d" aria-label="月下祓行 3D battle arena"></div>
+      <canvas id="game" aria-label="月下祓行 Boss battle arena"></canvas>
+      <canvas id="minimap" class="minimap" aria-label="附近地圖"></canvas>
+
+      <section class="hud" aria-live="polite">
+        <div class="top-row">
+          <div class="panel player-panel">
+            <div class="panel-head">
+              <span>月下行者</span>
+              <strong id="pathRank">祓道階 荒・初段</strong>
+            </div>
+            <div class="meter-set">
+              <label>
+                <span>心燈</span>
+                <i class="meter"><b id="hpBar"></b></i>
+              </label>
+              <label>
+                <span>勢</span>
+                <i class="meter force"><b id="forceBar"></b></i>
+              </label>
+              <label id="pollutionMeterRow" hidden>
+                <span>祟</span>
+                <i class="meter stain"><b id="pollutionBar"></b></i>
+              </label>
+            </div>
+          </div>
+
+          <div class="panel boss-panel">
+            <div class="panel-head">
+              <span id="bossName">槻守の影</span>
+              <strong id="desireRank">守護願・縛七段</strong>
+            </div>
+            <div class="meter-set">
+              <label>
+                <span>形</span>
+                <i class="meter boss-form"><b id="formBar"></b></i>
+              </label>
+              <label>
+                <span>相</span>
+                <i class="meter aspect"><b id="aspectBar"></b></i>
+              </label>
+              <label>
+                <span>願</span>
+                <i class="meter wish"><b id="wishBar"></b></i>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="state-row">
+          <div class="state-seal">
+            <span>境</span>
+            <strong id="phaseSeal">形</strong>
+          </div>
+          <div class="memory-strip" id="memoryStrip">
+            <span>未聽</span>
+            <span>未聽</span>
+            <span>未聽</span>
+          </div>
+        </div>
+        <div class="top-actions" id="topActions" hidden>
+          <button class="ghost icon-action menu-action" id="menuButton" type="button" aria-label="選單">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="action-row" aria-label="battle commands">
+          <span><kbd>←↑↓→</kbd><b>移</b></span>
+          <span class="camera-command"><kbd>WASD</kbd><b>視</b></span>
+          <span class="travel-command"><kbd>X</kbd><b>遊</b></span>
+          <span class="jump-command"><kbd>Y</kbd><b>跳</b></span>
+          <span><kbd>Space</kbd><b>斬</b></span>
+          <span><kbd>E</kbd><b>照</b></span>
+          <span class="explore-command"><kbd>E</kbd><b>話</b></span>
+          <span class="explore-command"><kbd>F</kbd><b>拾</b></span>
+          <span><kbd>K</kbd><b>祓</b></span>
+        </div>
+
+        <div class="message-log" id="messageLog"></div>
+      </section>
+
+      <section class="overlay show" id="startScreen">
+        <div class="title-block">
+          <p>日式和風黑暗奇幻 RPG 原型</p>
+          <h1>月下祓行</h1>
+          <div class="title-sutra">遊以避其勢　斬以破其形　祓以歸其願</div>
+        </div>
+        <div class="account-panel">
+          <div class="account-head">
+            <span>帳號</span>
+          </div>
+          <div class="account-list" id="accountList">
+            <button type="button" disabled>讀取中</button>
+          </div>
+          <form class="register-form" id="registerForm">
+            <input id="accountNameInput" name="name" type="text" autocomplete="off" maxlength="24" placeholder="名" required />
+            <button class="ghost" type="submit">登録 / 登入</button>
+          </form>
+          <div class="account-current" id="accountStatus">未登入</div>
+        </div>
+      </section>
+
+      <section class="overlay result" id="resultScreen" hidden>
+        <div class="plaque" id="resultPlaque">
+          <span class="plaque-kicker">境札</span>
+          <strong id="resultRank">荒壱</strong>
+          <p id="resultMeaning">尚未成形，戰鬥粗糙但有力量。</p>
+        </div>
+        <div class="result-grid">
+          <span>祓道階 <b id="resultPath">荒・初段</b></span>
+          <span>欲執階 <b>守護願・縛七段</b></span>
+          <span>相 <b id="resultMemory">0 / 3</b></span>
+          <span>刻 <b id="resultTime">0:00</b></span>
+        </div>
+        <div class="exp-panel" aria-label="祓道階經驗">
+          <div class="exp-head">
+            <span id="resultExpRank">荒・初段</span>
+            <strong id="resultExpGain">+0 EXP</strong>
+          </div>
+          <div class="exp-meter">
+            <b id="resultExpBar"></b>
+          </div>
+          <div class="exp-foot">
+            <span id="resultExpText">0 / 10</span>
+            <span id="resultExpNext">次段 荒・二段</span>
+          </div>
+        </div>
+        <div class="record-panel" aria-label="battle records">
+          <div class="record-head">
+            <span>戰績</span>
+            <strong id="bestRecord">尚無記錄</strong>
+          </div>
+          <ol class="record-list" id="recordList">
+            <li>尚無戰績</li>
+          </ol>
+        </div>
+        <div class="result-actions">
+          <button class="primary" id="restartButton" type="button">再祓</button>
+          <button class="ghost" id="returnButton" type="button">返回</button>
+        </div>
+      </section>
+
+      <section class="overlay world-map" id="worldMapScreen" hidden>
+        <div class="world-map-panel">
+          <div class="world-map-head">
+            <span>地圖</span>
+            <button class="ghost" id="worldMapCloseButton" type="button">返回</button>
+          </div>
+          <div class="world-map-title">
+            <strong>月下原野</strong>
+            <div class="world-map-meta">
+              <span id="worldMapRegionLabel">全域</span>
+              <div class="world-map-zoom" aria-label="地圖縮放">
+                <button class="map-zoom-button" id="worldMapZoomOutButton" type="button" aria-label="縮小">-</button>
+                <button class="map-zoom-level" id="worldMapZoomResetButton" type="button" aria-label="重置縮放">
+                  <span id="worldMapZoomLabel">1.0倍</span>
+                </button>
+                <button class="map-zoom-button" id="worldMapZoomInButton" type="button" aria-label="放大">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="world-map-scroll" id="worldMapScroll">
+            <div class="world-map-stage" id="worldMapStage">
+              <canvas id="worldMapCanvas" aria-label="月下原野全域地圖"></canvas>
+              <button class="map-anchor" id="villageMapAnchor" type="button">
+                <span>村</span>
+                <b>中立村落</b>
+              </button>
+              <button class="map-anchor" id="southwestCityMapAnchor" type="button">
+                <span>城</span>
+                <b>西南主城</b>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay village-shop" id="shopScreen" hidden>
+        <div class="ultimate-particle-layer" aria-hidden="true"></div>
+        <span class="panel-realm-mark shop-realm-mark" id="shopRealmMark" aria-hidden="true">荒</span>
+        <div class="shop-panel">
+          <div class="shop-head backpack-head">
+            <span>店鋪</span>
+            <button class="ghost" id="shopCloseButton" type="button">返回</button>
+          </div>
+          <div class="coin-card" aria-live="polite">
+            <span>銅錢</span>
+            <strong id="shopCoinLabel">0 円</strong>
+          </div>
+          <div class="shop-title">
+            <strong>今日棚</strong>
+            <span id="shopDayLabel">----</span>
+          </div>
+          <div class="shop-section">
+            <span>常備</span>
+            <div class="shop-list" id="shopInfiniteList"></div>
+          </div>
+          <div class="shop-section">
+            <span>日替</span>
+            <div class="shop-list" id="shopDailyList"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay blacksmith" id="blacksmithScreen" hidden>
+        <div class="ultimate-particle-layer" aria-hidden="true"></div>
+        <span class="panel-realm-mark blacksmith-realm-mark" id="blacksmithRealmMark" aria-hidden="true">荒</span>
+        <div class="blacksmith-panel">
+          <div class="blacksmith-head backpack-head">
+            <span>打鐵</span>
+            <button class="ghost" id="blacksmithCloseButton" type="button">返回</button>
+          </div>
+          <div class="blacksmith-layout">
+            <section class="blacksmith-left" aria-label="可拆解武器">
+              <div class="coin-card" aria-live="polite">
+                <span>持有</span>
+                <div class="currency-stack">
+                  <strong id="blacksmithCoinAmount">0 円</strong>
+                  <strong id="blacksmithGoldAmount">金 0</strong>
+                </div>
+              </div>
+              <div class="inventory-grid blacksmith-inventory" id="blacksmithInventoryList" aria-live="polite"></div>
+              <div class="backpack-empty" id="blacksmithEmpty" hidden>沒有可拆解的武器。</div>
+            </section>
+            <aside class="blacksmith-summary" aria-live="polite">
+              <span>結算</span>
+              <strong>拆解清單</strong>
+              <div class="blacksmith-summary-list" id="blacksmithSettlementItems"></div>
+              <div class="blacksmith-totals">
+                <small>消耗銅円 <b id="blacksmithCoinCost">0 円</b></small>
+                <small>獲得礦石 <b id="blacksmithOreGain">0</b></small>
+                <small>獲得金 <b id="blacksmithGoldGain">0</b></small>
+              </div>
+              <button class="resonance-button" id="blacksmithSmeltButton" type="button">拆解</button>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay side-menu" id="sideMenuScreen" hidden>
+        <button class="side-menu-scrim" id="sideMenuScrim" type="button" aria-label="關閉選單"></button>
+        <aside class="side-menu-panel" aria-label="選單">
+          <div class="ultimate-particle-layer" aria-hidden="true"></div>
+          <span class="side-menu-realm-mark" id="sideMenuRealmMark" aria-hidden="true">荒</span>
+          <div class="side-menu-head">
+            <span>選單</span>
+            <button class="ghost" id="sideMenuCloseButton" type="button">閉じる</button>
+          </div>
+          <div class="side-menu-account">
+            <div class="side-menu-account-copy">
+              <strong id="sideMenuName">月下行者</strong>
+              <span id="sideMenuRank">祓道階·初段 EXP 0</span>
+            </div>
+            <span class="side-menu-account-mark" id="sideMenuAccountMark" aria-hidden="true">荒</span>
+          </div>
+          <div class="side-menu-actions">
+            <button class="settings-menu-item" id="sideMenuCharacterButton" type="button">
+              <strong>角色</strong>
+              <span>裝備與數值</span>
+            </button>
+            <button class="settings-menu-item" id="sideMenuInventoryButton" type="button">
+              <strong>背包</strong>
+              <span>銅円與持物</span>
+            </button>
+            <button class="settings-menu-item" id="sideMenuCodexButton" type="button">
+              <strong>圖鑑</strong>
+              <span>所有道具</span>
+            </button>
+            <button class="settings-menu-item" id="sideMenuSettingsButton" type="button">
+              <strong>設定</strong>
+              <span>帳號、音效、鳴謝</span>
+            </button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="overlay character" id="characterScreen" hidden>
+        <div class="ultimate-particle-layer" aria-hidden="true"></div>
+        <span class="panel-realm-mark character-realm-mark" id="characterRealmMark" aria-hidden="true">荒</span>
+        <div class="character-panel">
+          <div class="character-head">
+            <span>角色</span>
+            <button class="ghost" id="characterCloseButton" type="button">返回</button>
+          </div>
+          <div class="character-identity">
+            <strong id="characterName">月下行者</strong>
+            <span id="characterRank">祓道階 荒・初段</span>
+          </div>
+          <div class="character-stats" id="characterStats" aria-live="polite"></div>
+          <div class="equipment-list" id="equipmentSlots" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="overlay backpack" id="backpackScreen" hidden>
+        <div class="ultimate-particle-layer" aria-hidden="true"></div>
+        <span class="panel-realm-mark backpack-realm-mark" id="backpackRealmMark" aria-hidden="true">荒</span>
+        <div class="backpack-panel">
+          <div class="backpack-head">
+            <span>背包</span>
+            <button class="ghost" id="backpackCloseButton" type="button">返回</button>
+          </div>
+          <div class="coin-card" aria-live="polite">
+            <span>持有</span>
+            <div class="currency-stack">
+              <strong id="coinAmount">0 円</strong>
+              <strong id="goldAmount">金 0</strong>
+            </div>
+          </div>
+          <div class="backpack-tabs" aria-label="背包分類">
+            <button class="backpack-tab" type="button" data-inventory-category="special">特殊道具</button>
+            <button class="backpack-tab" type="button" data-inventory-category="prayer">祈物</button>
+            <button class="backpack-tab" type="button" data-inventory-category="weapon">武器</button>
+          </div>
+          <div class="item-tools" aria-label="背包檢視">
+            <button class="item-sort-button" type="button" data-quality-sort>品質排序</button>
+          </div>
+          <div class="quality-legend quality-filter" aria-label="按品質篩選">
+            <button type="button" data-quality-filter="all">全部</button>
+            <button type="button" data-quality="white" data-quality-filter="white">白</button>
+            <button type="button" data-quality="green" data-quality-filter="green">綠</button>
+            <button type="button" data-quality="blue" data-quality-filter="blue">藍</button>
+            <button type="button" data-quality="purple" data-quality-filter="purple">紫</button>
+            <button type="button" data-quality="gold" data-quality-filter="gold">金</button>
+            <button type="button" data-quality="roseGold" data-quality-filter="roseGold">桜</button>
+          </div>
+          <div class="inventory-grid" id="inventoryList" aria-live="polite"></div>
+          <div class="backpack-empty" id="backpackEmpty" hidden>此類尚空。</div>
+          <aside class="inventory-detail" id="inventoryDetail" aria-live="polite">
+            <span>道具詳情</span>
+            <strong>選擇一件道具</strong>
+            <p>點擊格子可查看共鳴階與效果。</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="overlay codex" id="codexScreen" hidden>
+        <div class="ultimate-particle-layer" aria-hidden="true"></div>
+        <span class="panel-realm-mark codex-realm-mark" id="codexRealmMark" aria-hidden="true">荒</span>
+        <div class="codex-panel">
+          <div class="codex-head">
+            <span>圖鑑</span>
+            <button class="ghost" id="codexCloseButton" type="button">返回</button>
+          </div>
+          <div class="item-tools" aria-label="圖鑑檢視">
+            <button class="item-sort-button" type="button" data-quality-sort>品質排序</button>
+          </div>
+          <div class="quality-legend quality-filter" aria-label="按品質篩選">
+            <button type="button" data-quality-filter="all">全部</button>
+            <button type="button" data-quality="white" data-quality-filter="white">白</button>
+            <button type="button" data-quality="green" data-quality-filter="green">綠</button>
+            <button type="button" data-quality="blue" data-quality-filter="blue">藍</button>
+            <button type="button" data-quality="purple" data-quality-filter="purple">紫</button>
+            <button type="button" data-quality="gold" data-quality-filter="gold">金</button>
+            <button type="button" data-quality="roseGold" data-quality-filter="roseGold">桜</button>
+          </div>
+          <div class="codex-list" id="codexList" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="overlay settings" id="settingsScreen" hidden>
+        <div class="ultimate-particle-layer" aria-hidden="true"></div>
+        <span class="panel-realm-mark settings-realm-mark" id="settingsRealmMark" aria-hidden="true">荒</span>
+        <div class="settings-panel">
+          <div class="settings-head">
+            <span>設定</span>
+            <button class="ghost" id="settingsCloseButton" type="button">返回</button>
+          </div>
+          <div class="settings-menu" id="settingsMenu" aria-label="設定列表">
+            <button class="settings-menu-item" id="settingsMenuAccount" type="button">
+              <strong>帳號</strong>
+              <span>祓道階與紀錄</span>
+            </button>
+            <button class="settings-menu-item" id="settingsMenuAudio" type="button">
+              <strong>音效</strong>
+              <span>鈴音與樂量</span>
+            </button>
+            <button class="settings-menu-item" id="settingsMenuCredits" type="button">
+              <strong>特別鳴謝</strong>
+              <span>企劃、素材與協作</span>
+            </button>
+          </div>
+          <button class="ghost settings-back" id="settingsBackButton" type="button" hidden>返回</button>
+          <div class="settings-page" id="settingsAccountPage" hidden>
+            <div class="settings-account">
+              <strong id="settingsAccountName">未登入</strong>
+              <span id="settingsAccountRank">祓道階 荒・初段</span>
+            </div>
+            <form class="rename-form" id="renameForm" autocomplete="off">
+              <input id="renameNameInput" name="name" type="text" maxlength="24" placeholder="新名" />
+              <button class="ghost" id="renameAccountButton" type="submit">改名</button>
+              <small>納 5 銅円</small>
+            </form>
+            <div class="settings-actions">
+              <button class="ghost" id="clearRecordsButton" type="button">清除紀錄</button>
+              <button class="ghost danger" id="deleteAccountButton" type="button">刪除帳號</button>
+            </div>
+          </div>
+          <div class="settings-page" id="settingsAudioPage" hidden>
+            <label class="volume-control">
+              <span>音效 <b id="sfxVolumeValue">常</b></span>
+              <input id="sfxVolumeSlider" type="range" min="0" max="100" step="1" value="50" />
+              <small><i>靜</i><i>常</i><i>滿</i></small>
+            </label>
+            <label class="volume-control">
+              <span>BGM <b id="bgmVolumeValue">常</b></span>
+              <input id="bgmVolumeSlider" type="range" min="0" max="100" step="1" value="50" />
+              <small><i>靜</i><i>常</i><i>滿</i></small>
+            </label>
+            <div class="bgm-status" id="bgmStatus">BGM 待音</div>
+            <div class="settings-actions">
+              <button class="ghost" id="testSfxButton" type="button">試音</button>
+              <button class="ghost" id="testBgmButton" type="button">試樂</button>
+            </div>
+          </div>
+          <div class="settings-page" id="settingsCreditsPage" hidden>
+            <div class="credits-list">
+              <div><strong>企劃・世界觀</strong><span>Ronova</span></div>
+              <div><strong>地圖構想</strong><span>村落、神社、紅き境の設計</span></div>
+              <div><strong>音源提供</strong><span>HoYoMix</span></div>
+              <div><strong>開發協作</strong><span>Codex</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="item-popup" id="itemPopup" hidden aria-live="polite" aria-modal="true" role="dialog">
+        <div class="item-popup-card" id="itemPopupCard" data-quality="white">
+          <span class="item-popup-kicker" id="itemPopupKicker">授物</span>
+          <div class="item-popup-icon" id="itemPopupIcon">刀</div>
+          <strong id="itemPopupName">朽木打刀</strong>
+          <span class="item-popup-meta" id="itemPopupMeta">白 · 無銘</span>
+        </div>
+        <button class="primary item-popup-close" id="itemPopupCloseButton" type="button">確認</button>
+      </section>
+    </main>
+
+    <script src="./items-data.js" defer></script>
+    <script src="./progression-data.js" defer></script>
+    <script src="./chest-data.js" defer></script>
+    <script src="./game.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,4250 @@
+{
+  "categories": [
+    {
+      "key": "special",
+      "name": "特殊道具"
+    },
+    {
+      "key": "prayer",
+      "name": "祈物"
+    },
+    {
+      "key": "weapon",
+      "name": "武器"
+    }
+  ],
+  "equipmentSlots": [
+    {
+      "key": "weapon",
+      "name": "武器"
+    },
+    {
+      "key": "prayer",
+      "name": "祈物"
+    }
+  ],
+  "resonance": {
+    "max": 5,
+    "names": [
+      "初",
+      "二",
+      "三",
+      "四",
+      "真"
+    ],
+    "noneName": "無",
+    "copyCost": 2,
+    "coinBase": 5,
+    "qualityMultipliers": {
+      "white": 1,
+      "green": 2,
+      "blue": 3,
+      "purple": 5,
+      "gold": 7,
+      "roseGold": 10
+    },
+    "tiers": [
+      {
+        "key": "none",
+        "label": "無",
+        "level": 0
+      },
+      {
+        "key": "first",
+        "label": "初",
+        "level": 1
+      },
+      {
+        "key": "second",
+        "label": "二",
+        "level": 2
+      },
+      {
+        "key": "third",
+        "label": "三",
+        "level": 3
+      },
+      {
+        "key": "fourth",
+        "label": "四",
+        "level": 4
+      },
+      {
+        "key": "true",
+        "label": "真",
+        "level": 5
+      }
+    ]
+  },
+  "items": [
+    {
+      "key": "rottenUchigatana",
+      "id": "rottenUchigatana",
+      "name": "朽木打刀",
+      "displayName": "朽木打刀",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "weapon",
+      "icon": "刀",
+      "image": "./images/items/rottenUchigatana.png",
+      "donation": true,
+      "initial": true,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 22,
+          "stats": {},
+          "specialEffects": {},
+          "playerDescription": "攻擊力 22；初始武器，無特殊效果。"
+        },
+        "first": {
+          "baseDamage": 26,
+          "stats": {
+            "critDamageBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 26；爆擊傷害 +5%。"
+        },
+        "second": {
+          "baseDamage": 30,
+          "stats": {
+            "critDamageBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 30；爆擊傷害 +10%。"
+        },
+        "third": {
+          "baseDamage": 34,
+          "stats": {
+            "critDamageBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 34；爆擊傷害 +15%。"
+        },
+        "fourth": {
+          "baseDamage": 38,
+          "stats": {
+            "critDamageBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 38；爆擊傷害 +20%。"
+        },
+        "true": {
+          "baseDamage": 45,
+          "stats": {
+            "critDamageBonusPct": 20,
+            "critRateBonusPct": 2
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 45；爆擊傷害 +20%，爆擊率 +2%。"
+        }
+      },
+      "effect": "攻擊力 22；初始武器，無特殊效果。",
+      "damage": 22
+    },
+    {
+      "key": "villageDagger",
+      "id": "villageDagger",
+      "name": "村守短刀",
+      "displayName": "村守短刀",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "weapon",
+      "icon": "短",
+      "image": "./images/items/villageDagger.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 20,
+          "stats": {
+            "attackSpeedBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 20；攻擊速度 +10%。"
+        },
+        "first": {
+          "baseDamage": 24,
+          "stats": {
+            "attackSpeedBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 24；攻擊速度 +15%。"
+        },
+        "second": {
+          "baseDamage": 28,
+          "stats": {
+            "attackSpeedBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 28；攻擊速度 +20%。"
+        },
+        "third": {
+          "baseDamage": 32,
+          "stats": {
+            "attackSpeedBonusPct": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 32；攻擊速度 +25%。"
+        },
+        "fourth": {
+          "baseDamage": 36,
+          "stats": {
+            "attackSpeedBonusPct": 30
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 36；攻擊速度 +30%。"
+        },
+        "true": {
+          "baseDamage": 42,
+          "stats": {
+            "attackSpeedBonusPct": 30,
+            "critDamageBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 42；攻擊速度 +30%，爆擊傷害 +5%。"
+        }
+      },
+      "effect": "攻擊力 20；攻擊速度 +10%。",
+      "damage": 20
+    },
+    {
+      "key": "bronzeTachi",
+      "id": "bronzeTachi",
+      "name": "祭銅太刀",
+      "displayName": "祭銅太刀",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "weapon",
+      "icon": "銅",
+      "image": "./images/items/bronzeTachi.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 27,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 8
+          },
+          "playerDescription": "攻擊力 27；對「形」階段敵人傷害 +8%。"
+        },
+        "first": {
+          "baseDamage": 33,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 16
+          },
+          "playerDescription": "攻擊力 33；對「形」階段敵人傷害 +16%。"
+        },
+        "second": {
+          "baseDamage": 39,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 24
+          },
+          "playerDescription": "攻擊力 39；對「形」階段敵人傷害 +24%。"
+        },
+        "third": {
+          "baseDamage": 45,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 32
+          },
+          "playerDescription": "攻擊力 45；對「形」階段敵人傷害 +32%。"
+        },
+        "fourth": {
+          "baseDamage": 51,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 40
+          },
+          "playerDescription": "攻擊力 51；對「形」階段敵人傷害 +40%。"
+        },
+        "true": {
+          "baseDamage": 60,
+          "stats": {
+            "critRateBonusPct": 5
+          },
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 40
+          },
+          "playerDescription": "攻擊力 60；對「形」階段敵人傷害 +40%，爆擊率 +5%。"
+        }
+      },
+      "effect": "攻擊力 27；對「形」階段敵人傷害 +8%。",
+      "damage": 27
+    },
+    {
+      "key": "suzuNaginata",
+      "id": "suzuNaginata",
+      "name": "鳴鈴薙刀",
+      "displayName": "鳴鈴薙刀",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "weapon",
+      "icon": "薙",
+      "image": "./images/items/suzuNaginata.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 29,
+          "stats": {
+            "curseResistPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 29；祟抗性 +10%。"
+        },
+        "first": {
+          "baseDamage": 35,
+          "stats": {
+            "curseResistPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 35；祟抗性 +20%。"
+        },
+        "second": {
+          "baseDamage": 41,
+          "stats": {
+            "curseResistPct": 30
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 41；祟抗性 +30%。"
+        },
+        "third": {
+          "baseDamage": 47,
+          "stats": {
+            "curseResistPct": 40
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 47；祟抗性 +40%。"
+        },
+        "fourth": {
+          "baseDamage": 53,
+          "stats": {
+            "curseResistPct": 50
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 53；祟抗性 +50%。"
+        },
+        "true": {
+          "baseDamage": 63,
+          "stats": {
+            "curseResistPct": 80
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 63；祟抗性 +80%。"
+        }
+      },
+      "effect": "攻擊力 29；祟抗性 +10%。",
+      "damage": 29
+    },
+    {
+      "key": "moonKodachi",
+      "id": "moonKodachi",
+      "name": "月影小太刀",
+      "displayName": "月影小太刀",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "weapon",
+      "icon": "月",
+      "image": "./images/items/moonKodachi.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 39,
+          "stats": {
+            "yuuDamageBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 39；遊狀態下傷害 +20%。"
+        },
+        "first": {
+          "baseDamage": 48,
+          "stats": {
+            "yuuDamageBonusPct": 40
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 48；遊狀態下傷害 +40%。"
+        },
+        "second": {
+          "baseDamage": 57,
+          "stats": {
+            "yuuDamageBonusPct": 60
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 57；遊狀態下傷害 +60%。"
+        },
+        "third": {
+          "baseDamage": 66,
+          "stats": {
+            "yuuDamageBonusPct": 80
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 66；遊狀態下傷害 +80%。"
+        },
+        "fourth": {
+          "baseDamage": 75,
+          "stats": {
+            "yuuDamageBonusPct": 100
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 75；遊狀態下傷害 +100%。"
+        },
+        "true": {
+          "baseDamage": 90,
+          "stats": {
+            "yuuDamageBonusPct": 100,
+            "critRateBonusPct": 7
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 90；遊狀態下傷害 +100%，爆擊率 +7%。"
+        }
+      },
+      "effect": "攻擊力 39；遊狀態下傷害 +20%。",
+      "damage": 39
+    },
+    {
+      "key": "riftLongBlade",
+      "id": "riftLongBlade",
+      "name": "裂願長刀",
+      "displayName": "裂願長刀",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "weapon",
+      "icon": "裂",
+      "image": "./images/items/riftLongBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 36,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 35,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 36；敵人生命低於 35% 時，攻擊力 +50%。"
+        },
+        "first": {
+          "baseDamage": 45,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 45,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 45；敵人生命低於 45% 時，攻擊力 +50%。"
+        },
+        "second": {
+          "baseDamage": 54,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 55,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 54；敵人生命低於 55% 時，攻擊力 +50%。"
+        },
+        "third": {
+          "baseDamage": 63,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 65,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 63；敵人生命低於 65% 時，攻擊力 +50%。"
+        },
+        "fourth": {
+          "baseDamage": 72,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 75,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 72；敵人生命低於 75% 時，攻擊力 +50%。"
+        },
+        "true": {
+          "baseDamage": 86,
+          "stats": {
+            "critDamageBonusPct": 50
+          },
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 75,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 86；敵人生命低於 75% 時，攻擊力 +50%，爆擊傷害 +50%。"
+        }
+      },
+      "effect": "攻擊力 36；敵人生命低於 35% 時，攻擊力 +50%。",
+      "damage": 36
+    },
+    {
+      "key": "scarletSakuraTachi",
+      "id": "scarletSakuraTachi",
+      "name": "緋櫻太刀",
+      "displayName": "緋櫻太刀",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "weapon",
+      "icon": "櫻",
+      "image": "./images/items/scarletSakuraTachi.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 61,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 50
+            }
+          },
+          "playerDescription": "攻擊力 61；每第三擊釋放小範圍斬擊，造成攻擊力 50% 傷害。"
+        },
+        "first": {
+          "baseDamage": 75,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 70
+            }
+          },
+          "playerDescription": "攻擊力 75；每第三擊釋放小範圍斬擊，造成攻擊力 70% 傷害。"
+        },
+        "second": {
+          "baseDamage": 89,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 90
+            }
+          },
+          "playerDescription": "攻擊力 89；每第三擊釋放小範圍斬擊，造成攻擊力 90% 傷害。"
+        },
+        "third": {
+          "baseDamage": 103,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 110
+            }
+          },
+          "playerDescription": "攻擊力 103；每第三擊釋放小範圍斬擊，造成攻擊力 110% 傷害。"
+        },
+        "fourth": {
+          "baseDamage": 117,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 130
+            }
+          },
+          "playerDescription": "攻擊力 117；每第三擊釋放小範圍斬擊，造成攻擊力 130% 傷害。"
+        },
+        "true": {
+          "baseDamage": 140,
+          "stats": {
+            "critRateBonusPct": 10
+          },
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 150
+            }
+          },
+          "playerDescription": "攻擊力 140；每第三擊釋放小範圍斬擊，造成攻擊力 150% 傷害，爆擊率 +10%。"
+        }
+      },
+      "effect": "攻擊力 61；每第三擊釋放小範圍斬擊，造成攻擊力 50% 傷害。",
+      "damage": 61
+    },
+    {
+      "key": "formlessBlade",
+      "id": "formlessBlade",
+      "name": "無相之刃",
+      "displayName": "無相之刃",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "weapon",
+      "icon": "相",
+      "image": "./images/items/formlessBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 59,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 59；對「相」階段的破除速度 +50%。"
+        },
+        "first": {
+          "baseDamage": 73,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 55
+            }
+          },
+          "playerDescription": "攻擊力 73；對「相」階段的破除速度 +55%。"
+        },
+        "second": {
+          "baseDamage": 87,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 60
+            }
+          },
+          "playerDescription": "攻擊力 87；對「相」階段的破除速度 +60%。"
+        },
+        "third": {
+          "baseDamage": 101,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 65
+            }
+          },
+          "playerDescription": "攻擊力 101；對「相」階段的破除速度 +65%。"
+        },
+        "fourth": {
+          "baseDamage": 115,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 70
+            }
+          },
+          "playerDescription": "攻擊力 115；對「相」階段的破除速度 +70%。"
+        },
+        "true": {
+          "baseDamage": 137,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 75
+            },
+            "yuuMoveSpeedBonusPct": 20
+          },
+          "playerDescription": "攻擊力 137；對「相」階段的破除速度 +75%，遊狀態下移動速度 +20%。"
+        }
+      },
+      "effect": "攻擊力 59；對「相」階段的破除速度 +50%。",
+      "damage": 59
+    },
+    {
+      "key": "severanceNaginata",
+      "id": "severanceNaginata",
+      "name": "斷念薙刀",
+      "displayName": "斷念薙刀",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "weapon",
+      "icon": "斷",
+      "image": "./images/items/severanceNaginata.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 91,
+          "stats": {
+            "attackBonusPct": 18
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 91；攻擊力加成 +18%。"
+        },
+        "first": {
+          "baseDamage": 116,
+          "stats": {
+            "attackBonusPct": 27
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 116；攻擊力加成 +27%。"
+        },
+        "second": {
+          "baseDamage": 141,
+          "stats": {
+            "attackBonusPct": 36
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 141；攻擊力加成 +36%。"
+        },
+        "third": {
+          "baseDamage": 166,
+          "stats": {
+            "attackBonusPct": 45
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 166；攻擊力加成 +45%。"
+        },
+        "fourth": {
+          "baseDamage": 191,
+          "stats": {
+            "attackBonusPct": 54
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 191；攻擊力加成 +54%。"
+        },
+        "true": {
+          "baseDamage": 225,
+          "stats": {
+            "attackBonusPct": 60,
+            "critDamageBonusPct": 50
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 225；攻擊力加成 +60%，爆擊傷害 +50%。"
+        }
+      },
+      "effect": "攻擊力 91；攻擊力加成 +18%。",
+      "damage": 91
+    },
+    {
+      "key": "tsukishitaHaraiBlade",
+      "id": "tsukishitaHaraiBlade",
+      "name": "月下祓刀",
+      "displayName": "月下祓刀",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "weapon",
+      "icon": "祓",
+      "image": "./images/items/tsukishitaHaraiBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 91,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 91；戰鬥開始時獲得相當於最大生命 50% 的護盾。"
+        },
+        "first": {
+          "baseDamage": 116,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 70
+            }
+          },
+          "playerDescription": "攻擊力 116；戰鬥開始時獲得相當於最大生命 70% 的護盾。"
+        },
+        "second": {
+          "baseDamage": 141,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 90
+            }
+          },
+          "playerDescription": "攻擊力 141；戰鬥開始時獲得相當於最大生命 90% 的護盾。"
+        },
+        "third": {
+          "baseDamage": 166,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 110
+            }
+          },
+          "playerDescription": "攻擊力 166；戰鬥開始時獲得相當於最大生命 110% 的護盾。"
+        },
+        "fourth": {
+          "baseDamage": 191,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 130
+            }
+          },
+          "playerDescription": "攻擊力 191；戰鬥開始時獲得相當於最大生命 130% 的護盾。"
+        },
+        "true": {
+          "baseDamage": 225,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 150,
+              "shieldBreakDefenseDamagePct": 50
+            }
+          },
+          "playerDescription": "攻擊力 225；戰鬥開始時獲得相當於最大生命 150% 的護盾。護盾碎裂時，對執念造成相當於其 50% 防禦力的碎裂傷害。"
+        }
+      },
+      "effect": "攻擊力 91；戰鬥開始時獲得相當於最大生命 50% 的護盾。",
+      "damage": 91
+    },
+    {
+      "key": "finalMoon",
+      "id": "finalMoon",
+      "name": "祓行・終月",
+      "displayName": "祓行・終月",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "weapon",
+      "icon": "終",
+      "image": "./images/items/finalMoon.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 120,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 3
+            }
+          },
+          "playerDescription": "攻擊力 120；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +3%。"
+        },
+        "first": {
+          "baseDamage": 150,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 4
+            }
+          },
+          "playerDescription": "攻擊力 150；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +4%。"
+        },
+        "second": {
+          "baseDamage": 180,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 5
+            }
+          },
+          "playerDescription": "攻擊力 180；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +5%。"
+        },
+        "third": {
+          "baseDamage": 210,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 6
+            }
+          },
+          "playerDescription": "攻擊力 210；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +6%。"
+        },
+        "fourth": {
+          "baseDamage": 240,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 7
+            }
+          },
+          "playerDescription": "攻擊力 240；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +7%。"
+        },
+        "true": {
+          "baseDamage": 280,
+          "stats": {
+            "critDamageBonusPct": 8
+          },
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 8
+            }
+          },
+          "playerDescription": "攻擊力 280；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +8%，爆擊傷害 +8%。"
+        }
+      },
+      "effect": "攻擊力 120；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +3%。",
+      "damage": 120
+    },
+    {
+      "key": "noWishBlade",
+      "id": "noWishBlade",
+      "name": "無願之刃",
+      "displayName": "無願之刃",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "weapon",
+      "icon": "無",
+      "image": "./images/items/noWishBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 140,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 10,
+              "skillRateSlowPct": 10,
+              "moveSpeedSlowPct": 10,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 140；執念攻擊速度與技能頻率降低 10%，玩家免疫執念的攻速干擾。"
+        },
+        "first": {
+          "baseDamage": 170,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 20,
+              "skillRateSlowPct": 20,
+              "moveSpeedSlowPct": 20,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 170；執念攻擊速度與技能頻率降低 20%，玩家免疫執念的攻速干擾。"
+        },
+        "second": {
+          "baseDamage": 200,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 30,
+              "skillRateSlowPct": 30,
+              "moveSpeedSlowPct": 30,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 200；執念攻擊速度與技能頻率降低 30%，玩家免疫執念的攻速干擾。"
+        },
+        "third": {
+          "baseDamage": 230,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 40,
+              "skillRateSlowPct": 40,
+              "moveSpeedSlowPct": 40,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 230；執念攻擊速度與技能頻率降低 40%，玩家免疫執念的攻速干擾。"
+        },
+        "fourth": {
+          "baseDamage": 260,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 50,
+              "skillRateSlowPct": 50,
+              "moveSpeedSlowPct": 50,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 260；執念攻擊速度與技能頻率降低 50%，玩家免疫執念的攻速干擾。"
+        },
+        "true": {
+          "baseDamage": 280,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 60,
+              "skillRateSlowPct": 60,
+              "moveSpeedSlowPct": 60,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 280；執念攻擊速度與技能頻率降低 60%，玩家免疫執念的攻速干擾。"
+        }
+      },
+      "effect": "攻擊力 140；執念攻擊速度與技能頻率降低 10%，玩家免疫執念的攻速干擾。",
+      "damage": 140
+    },
+    {
+      "key": "plainOmamori",
+      "id": "plainOmamori",
+      "name": "素白御守",
+      "displayName": "素白御守",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "prayer",
+      "icon": "守",
+      "image": "./images/items/plainOmamori.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "maxHpFlat": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +15。"
+        },
+        "first": {
+          "stats": {
+            "maxHpFlat": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +25。"
+        },
+        "second": {
+          "stats": {
+            "maxHpFlat": 45
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +45。"
+        },
+        "third": {
+          "stats": {
+            "maxHpFlat": 75
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +75。"
+        },
+        "fourth": {
+          "stats": {
+            "maxHpFlat": 135
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +135。"
+        },
+        "true": {
+          "stats": {
+            "maxHpFlat": 235
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +235。"
+        }
+      },
+      "effect": "最大生命 +15。"
+    },
+    {
+      "key": "travelerPlaque",
+      "id": "travelerPlaque",
+      "name": "旅人木牌",
+      "displayName": "旅人木牌",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "prayer",
+      "icon": "牌",
+      "image": "./images/items/travelerPlaque.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "moveSpeedBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +5%。"
+        },
+        "first": {
+          "stats": {
+            "moveSpeedBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +10%。"
+        },
+        "second": {
+          "stats": {
+            "moveSpeedBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +15%。"
+        },
+        "third": {
+          "stats": {
+            "moveSpeedBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +20%。"
+        },
+        "fourth": {
+          "stats": {
+            "moveSpeedBonusPct": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +25%。"
+        },
+        "true": {
+          "stats": {
+            "moveSpeedBonusPct": 35
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +35%。"
+        }
+      },
+      "effect": "移動速度 +5%。"
+    },
+    {
+      "key": "aobaEma",
+      "id": "aobaEma",
+      "name": "青葉繪馬",
+      "displayName": "青葉繪馬",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "prayer",
+      "icon": "繪",
+      "image": "./images/items/aobaEma.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "expBonusPct": 10,
+            "maxHpBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +10%，最大生命 +5%。"
+        },
+        "first": {
+          "stats": {
+            "expBonusPct": 15,
+            "maxHpBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +15%，最大生命 +10%。"
+        },
+        "second": {
+          "stats": {
+            "expBonusPct": 20,
+            "maxHpBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +20%，最大生命 +15%。"
+        },
+        "third": {
+          "stats": {
+            "expBonusPct": 25,
+            "maxHpBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +25%，最大生命 +20%。"
+        },
+        "fourth": {
+          "stats": {
+            "expBonusPct": 30,
+            "maxHpBonusPct": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +30%，最大生命 +25%。"
+        },
+        "true": {
+          "stats": {
+            "expBonusPct": 35,
+            "maxHpBonusPct": 35
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +35%，最大生命 +35%。"
+        }
+      },
+      "effect": "戰鬥結束後經驗 +10%，最大生命 +5%。"
+    },
+    {
+      "key": "smallHaraiBell",
+      "id": "smallHaraiBell",
+      "name": "小祓鈴",
+      "displayName": "小祓鈴",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "prayer",
+      "icon": "鈴",
+      "image": "./images/items/smallHaraiBell.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 20
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 20% 的生命。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 30
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 30% 的生命。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 40
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 40% 的生命。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 50
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 50% 的生命。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 60
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 60% 的生命。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 90
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 90% 的生命。"
+        }
+      },
+      "effect": "每 7 秒一次，攻擊後恢復相當於造成傷害 20% 的生命。"
+    },
+    {
+      "key": "stillWaterBeads",
+      "id": "stillWaterBeads",
+      "name": "靜水念珠",
+      "displayName": "靜水念珠",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "prayer",
+      "icon": "珠",
+      "image": "./images/items/stillWaterBeads.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 10,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -10%，並免疫觸碰造成的傷害。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 20,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -20%，並免疫觸碰造成的傷害。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 30,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -30%，並免疫觸碰造成的傷害。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 40,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -40%，並免疫觸碰造成的傷害。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 50,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -50%，並免疫觸碰造成的傷害。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 60,
+            "touchDamageImmunity": true,
+            "periodicDamageImmunitySeconds": 15
+          },
+          "playerDescription": "執念移動速度 -60%，並免疫觸碰造成的傷害。每 15 秒免疫一次傷害。"
+        }
+      },
+      "effect": "執念移動速度 -10%，並免疫觸碰造成的傷害。"
+    },
+    {
+      "key": "returnSoulKnot",
+      "id": "returnSoulKnot",
+      "name": "返魂結",
+      "displayName": "返魂結",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "prayer",
+      "icon": "結",
+      "image": "./images/items/returnSoulKnot.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 1 次。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 2
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 2 次。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 3
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 3 次。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 4
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 4 次。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 5
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 5 次。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 75,
+              "maxTriggers": 5
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 75% 最大生命，戰鬥中限 5 次。"
+        }
+      },
+      "effect": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 1 次。"
+    },
+    {
+      "key": "moonSachet",
+      "id": "moonSachet",
+      "name": "月見香袋",
+      "displayName": "月見香袋",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "prayer",
+      "icon": "香",
+      "image": "./images/items/moonSachet.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 20
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +20%。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 30
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +30%。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 40
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +40%。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 50
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +50%。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 60
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +60%。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 60,
+            "yuuUntilBattleEndOnPhaseShift": true,
+            "yuuNoForceDrain": true
+          },
+          "playerDescription": "執念進入新階段後，玩家進入遊狀態直到戰鬥結束；期間遊不消耗勢。"
+        }
+      },
+      "effect": "執念進入新階段時，玩家移動速度 +20%。"
+    },
+    {
+      "key": "obsessionOrb",
+      "id": "obsessionOrb",
+      "name": "破執玉",
+      "displayName": "破執玉",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "prayer",
+      "icon": "玉",
+      "image": "./images/items/obsessionOrb.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "attackBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +20%。"
+        },
+        "first": {
+          "stats": {
+            "attackBonusPct": 30
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +30%。"
+        },
+        "second": {
+          "stats": {
+            "attackBonusPct": 40
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +40%。"
+        },
+        "third": {
+          "stats": {
+            "attackBonusPct": 50
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +50%。"
+        },
+        "fourth": {
+          "stats": {
+            "attackBonusPct": 60
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +60%。"
+        },
+        "true": {
+          "stats": {
+            "attackBonusPct": 70,
+            "critRateBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +70%，爆擊率 +10%。"
+        }
+      },
+      "effect": "攻擊力加成 +20%。"
+    },
+    {
+      "key": "kaguraBell",
+      "id": "kaguraBell",
+      "name": "神樂鈴",
+      "displayName": "神樂鈴",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "prayer",
+      "icon": "鈴",
+      "image": "./images/items/kaguraBell.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 80,
+              "damagePct": 45
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 80，造成攻擊力 45% 傷害。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 85,
+              "damagePct": 50
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 85，造成攻擊力 50% 傷害。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 90,
+              "damagePct": 55
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 90，造成攻擊力 55% 傷害。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 95,
+              "damagePct": 60
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 95，造成攻擊力 60% 傷害。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 100,
+              "damagePct": 65
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 100，造成攻擊力 65% 傷害。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 120,
+              "damagePct": 70
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 120，造成攻擊力 70% 傷害。"
+        }
+      },
+      "effect": "每 3 秒自動產生祓力波動，半徑 80，造成攻擊力 45% 傷害。"
+    },
+    {
+      "key": "mirrorShard",
+      "id": "mirrorShard",
+      "name": "御神鏡碎片",
+      "displayName": "御神鏡碎片",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "prayer",
+      "icon": "鏡",
+      "image": "./images/items/mirrorShard.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 3,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 3 秒無敵。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 6,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 6 秒無敵。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 9,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 9 秒無敵。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 12,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 12 秒無敵。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 12,
+              "maxTriggers": 2
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 12 秒無敵；戰鬥中可觸發 2 次。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 12,
+              "maxTriggers": 3,
+              "shockwaveRadius": 300,
+              "shockwaveDamagePct": 300
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 12 秒無敵；戰鬥中可觸發 3 次。觸發時釋放半徑 300 的衝擊波，造成攻擊力 300% 傷害。"
+        }
+      },
+      "effect": "血量歸零時立即恢復滿生命，並獲得 3 秒無敵。"
+    },
+    {
+      "key": "roseGoldEma",
+      "id": "roseGoldEma",
+      "name": "桜繪馬",
+      "displayName": "桜繪馬",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "prayer",
+      "icon": "桜",
+      "image": "./images/items/roseGoldEma.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.2,
+              "gold": 0.8,
+              "purple": 9,
+              "blue": 30,
+              "green": 30,
+              "white": 30
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.2%，金 0.8%，紫 9%，藍 30%，綠 30%，白 30%。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.3,
+              "gold": 1.2,
+              "purple": 13.5,
+              "blue": 30,
+              "green": 30,
+              "white": 25
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.3%，金 1.2%，紫 13.5%，藍 30%，綠 30%，白 25%。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.4,
+              "gold": 1.6,
+              "purple": 18,
+              "blue": 30,
+              "green": 30,
+              "white": 20
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.4%，金 1.6%，紫 18%，藍 30%，綠 30%，白 20%。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.5,
+              "gold": 2,
+              "purple": 22.5,
+              "blue": 30,
+              "green": 30,
+              "white": 15
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.5%，金 2.0%，紫 22.5%，藍 30%，綠 30%，白 15%。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.6,
+              "gold": 2.4,
+              "purple": 27,
+              "blue": 30,
+              "green": 30,
+              "white": 10
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.6%，金 2.4%，紫 27%，藍 30%，綠 30%，白 10%。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.7,
+              "gold": 2.8,
+              "purple": 31.5,
+              "blue": 35,
+              "green": 25,
+              "white": 5
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.7%，金 2.8%，紫 31.5%，藍 35%，綠 25%，白 5%。"
+        }
+      },
+      "effect": "祈願品質機率：玫瑰金 0.2%，金 0.8%，紫 9%，藍 30%，綠 30%，白 30%。"
+    },
+    {
+      "key": "formlessWishBead",
+      "id": "formlessWishBead",
+      "name": "無相願珠",
+      "displayName": "無相願珠",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "prayer",
+      "icon": "願",
+      "image": "./images/items/formlessWishBead.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "attackBonusPct": 30
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 400
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 400，攻擊力加成 +30%。"
+        },
+        "first": {
+          "stats": {
+            "attackBonusPct": 40
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 500
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 500，攻擊力加成 +40%。"
+        },
+        "second": {
+          "stats": {
+            "attackBonusPct": 50
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 600
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 600，攻擊力加成 +50%。"
+        },
+        "third": {
+          "stats": {
+            "attackBonusPct": 60
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 700
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 700，攻擊力加成 +60%。"
+        },
+        "fourth": {
+          "stats": {
+            "attackBonusPct": 70
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 800
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 800，攻擊力加成 +70%。"
+        },
+        "true": {
+          "stats": {
+            "attackBonusPct": 80,
+            "critDamageBonusPct": 20
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 900
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 900，攻擊力加成 +80%，爆擊傷害 +20%。"
+        }
+      },
+      "effect": "「相」與「願」的範圍變成半徑 400，攻擊力加成 +30%。"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "roughHerb",
+      "name": "粗製草藥",
+      "rarity": "white",
+      "category": "special",
+      "icon": "草",
+      "effect": "恢復40HP",
+      "consumable": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/roughHerb.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "clearWaterBamboo",
+      "name": "清水竹筒",
+      "rarity": "white",
+      "category": "special",
+      "icon": "水",
+      "effect": "減少20%的祟",
+      "consumable": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/clearWaterBamboo.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "haraiPaper",
+      "name": "祓紙",
+      "rarity": "green",
+      "category": "special",
+      "icon": "紙",
+      "effect": "30秒內傷害+15%",
+      "consumable": true,
+      "rarityDisplay": "綠",
+      "image": "./images/items/haraiPaper.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "spiritSalt",
+      "name": "靈鹽",
+      "rarity": "green",
+      "category": "special",
+      "icon": "鹽",
+      "effect": "讓Boss下一次技能傷害降低90%",
+      "consumable": true,
+      "rarityDisplay": "綠",
+      "image": "./images/items/spiritSalt.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "moonDewForce",
+      "name": "月露藥・勢",
+      "rarity": "green",
+      "category": "special",
+      "icon": "勢",
+      "effect": "恢復50點勢",
+      "consumable": true,
+      "rarityDisplay": "綠",
+      "image": "./images/items/moonDewForce.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "evilBreakingTalisman",
+      "name": "破邪符",
+      "rarity": "blue",
+      "category": "special",
+      "icon": "符",
+      "effect": "立刻打斷小型執念的蓄力並眩暈執念4秒",
+      "consumable": true,
+      "rarityDisplay": "藍",
+      "image": "./images/items/evilBreakingTalisman.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "shrineSake",
+      "name": "神社御酒",
+      "rarity": "purple",
+      "category": "special",
+      "icon": "酒",
+      "effect": "恢復大量生命",
+      "consumable": true,
+      "rarityDisplay": "紫",
+      "image": "./images/items/shrineSake.png"
+    },
+    {
+      "max": 99,
+      "donation": true,
+      "key": "calmingIncense",
+      "name": "靜心香",
+      "rarity": "purple",
+      "category": "special",
+      "icon": "香",
+      "effect": "降低Boss技能頻率40%",
+      "consumable": true,
+      "rarityDisplay": "紫",
+      "image": "./images/items/calmingIncense.png"
+    },
+    {
+      "max": 3,
+      "donation": true,
+      "key": "moonPill",
+      "name": "月華丹",
+      "rarity": "gold",
+      "category": "special",
+      "icon": "丹",
+      "effect": "恢復50%生命並無敵7秒",
+      "consumable": true,
+      "rarityDisplay": "金",
+      "image": "./images/items/moonPill.png"
+    },
+    {
+      "max": 3,
+      "donation": true,
+      "key": "returnWishTalisman",
+      "name": "返願符",
+      "rarity": "roseGold",
+      "category": "special",
+      "icon": "返",
+      "effect": "化解一次相或願階段的執念",
+      "consumable": true,
+      "rarityDisplay": "玫瑰金",
+      "image": "./images/items/returnWishTalisman.png"
+    },
+    {
+      "max": 999999,
+      "donation": false,
+      "key": "ore",
+      "name": "礦石",
+      "rarity": "white",
+      "category": "special",
+      "icon": "礦",
+      "effect": "打鐵用的基礎材料。",
+      "stackable": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/ore.png"
+    },
+    {
+      "max": 99,
+      "donation": false,
+      "key": "pureIncenseCandle",
+      "name": "淨念香燭",
+      "rarity": "white",
+      "category": "special",
+      "icon": "燭",
+      "effect": "可在墓碑前結緣，使墓碑成為已解鎖的紀錄物。",
+      "consumable": true,
+      "shopInfinite": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/pureIncenseCandle.png"
+    },
+    {
+      "max": 3,
+      "donation": false,
+      "key": "blade",
+      "name": "破邪刀",
+      "rarity": "white",
+      "category": "weapon",
+      "icon": "舊",
+      "effect": "舊道具：斬擊威力小幅上升",
+      "legacy": true,
+      "damage": 24,
+      "damagePerLevel": 0.18,
+      "rarityDisplay": "白",
+      "image": "./images/items/blade.png"
+    },
+    {
+      "max": 3,
+      "donation": false,
+      "key": "amulet",
+      "name": "鎮祟守",
+      "rarity": "white",
+      "category": "prayer",
+      "icon": "舊",
+      "effect": "舊道具：祟累積減緩",
+      "legacy": true,
+      "pollutionReductionPerLevel": 0.16,
+      "rarityDisplay": "白",
+      "image": "./images/items/amulet.png"
+    },
+    {
+      "max": 3,
+      "donation": false,
+      "key": "armor",
+      "name": "守鎧",
+      "rarity": "white",
+      "category": "special",
+      "icon": "舊",
+      "effect": "舊道具：受傷減輕",
+      "legacy": true,
+      "armorReductionPerLevel": 0.14,
+      "rarityDisplay": "白",
+      "image": "./images/items/armor.png"
+    }
+  ],
+  "itemMap": {
+    "rottenUchigatana": {
+      "key": "rottenUchigatana",
+      "id": "rottenUchigatana",
+      "name": "朽木打刀",
+      "displayName": "朽木打刀",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "weapon",
+      "icon": "刀",
+      "image": "./images/items/rottenUchigatana.png",
+      "donation": true,
+      "initial": true,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 22,
+          "stats": {},
+          "specialEffects": {},
+          "playerDescription": "攻擊力 22；初始武器，無特殊效果。"
+        },
+        "first": {
+          "baseDamage": 26,
+          "stats": {
+            "critDamageBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 26；爆擊傷害 +5%。"
+        },
+        "second": {
+          "baseDamage": 30,
+          "stats": {
+            "critDamageBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 30；爆擊傷害 +10%。"
+        },
+        "third": {
+          "baseDamage": 34,
+          "stats": {
+            "critDamageBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 34；爆擊傷害 +15%。"
+        },
+        "fourth": {
+          "baseDamage": 38,
+          "stats": {
+            "critDamageBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 38；爆擊傷害 +20%。"
+        },
+        "true": {
+          "baseDamage": 45,
+          "stats": {
+            "critDamageBonusPct": 20,
+            "critRateBonusPct": 2
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 45；爆擊傷害 +20%，爆擊率 +2%。"
+        }
+      },
+      "effect": "攻擊力 22；初始武器，無特殊效果。",
+      "damage": 22
+    },
+    "villageDagger": {
+      "key": "villageDagger",
+      "id": "villageDagger",
+      "name": "村守短刀",
+      "displayName": "村守短刀",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "weapon",
+      "icon": "短",
+      "image": "./images/items/villageDagger.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 20,
+          "stats": {
+            "attackSpeedBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 20；攻擊速度 +10%。"
+        },
+        "first": {
+          "baseDamage": 24,
+          "stats": {
+            "attackSpeedBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 24；攻擊速度 +15%。"
+        },
+        "second": {
+          "baseDamage": 28,
+          "stats": {
+            "attackSpeedBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 28；攻擊速度 +20%。"
+        },
+        "third": {
+          "baseDamage": 32,
+          "stats": {
+            "attackSpeedBonusPct": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 32；攻擊速度 +25%。"
+        },
+        "fourth": {
+          "baseDamage": 36,
+          "stats": {
+            "attackSpeedBonusPct": 30
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 36；攻擊速度 +30%。"
+        },
+        "true": {
+          "baseDamage": 42,
+          "stats": {
+            "attackSpeedBonusPct": 30,
+            "critDamageBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 42；攻擊速度 +30%，爆擊傷害 +5%。"
+        }
+      },
+      "effect": "攻擊力 20；攻擊速度 +10%。",
+      "damage": 20
+    },
+    "bronzeTachi": {
+      "key": "bronzeTachi",
+      "id": "bronzeTachi",
+      "name": "祭銅太刀",
+      "displayName": "祭銅太刀",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "weapon",
+      "icon": "銅",
+      "image": "./images/items/bronzeTachi.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 27,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 8
+          },
+          "playerDescription": "攻擊力 27；對「形」階段敵人傷害 +8%。"
+        },
+        "first": {
+          "baseDamage": 33,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 16
+          },
+          "playerDescription": "攻擊力 33；對「形」階段敵人傷害 +16%。"
+        },
+        "second": {
+          "baseDamage": 39,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 24
+          },
+          "playerDescription": "攻擊力 39；對「形」階段敵人傷害 +24%。"
+        },
+        "third": {
+          "baseDamage": 45,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 32
+          },
+          "playerDescription": "攻擊力 45；對「形」階段敵人傷害 +32%。"
+        },
+        "fourth": {
+          "baseDamage": 51,
+          "stats": {},
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 40
+          },
+          "playerDescription": "攻擊力 51；對「形」階段敵人傷害 +40%。"
+        },
+        "true": {
+          "baseDamage": 60,
+          "stats": {
+            "critRateBonusPct": 5
+          },
+          "specialEffects": {
+            "shapePhaseAttackBonusPct": 40
+          },
+          "playerDescription": "攻擊力 60；對「形」階段敵人傷害 +40%，爆擊率 +5%。"
+        }
+      },
+      "effect": "攻擊力 27；對「形」階段敵人傷害 +8%。",
+      "damage": 27
+    },
+    "suzuNaginata": {
+      "key": "suzuNaginata",
+      "id": "suzuNaginata",
+      "name": "鳴鈴薙刀",
+      "displayName": "鳴鈴薙刀",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "weapon",
+      "icon": "薙",
+      "image": "./images/items/suzuNaginata.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 29,
+          "stats": {
+            "curseResistPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 29；祟抗性 +10%。"
+        },
+        "first": {
+          "baseDamage": 35,
+          "stats": {
+            "curseResistPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 35；祟抗性 +20%。"
+        },
+        "second": {
+          "baseDamage": 41,
+          "stats": {
+            "curseResistPct": 30
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 41；祟抗性 +30%。"
+        },
+        "third": {
+          "baseDamage": 47,
+          "stats": {
+            "curseResistPct": 40
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 47；祟抗性 +40%。"
+        },
+        "fourth": {
+          "baseDamage": 53,
+          "stats": {
+            "curseResistPct": 50
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 53；祟抗性 +50%。"
+        },
+        "true": {
+          "baseDamage": 63,
+          "stats": {
+            "curseResistPct": 80
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 63；祟抗性 +80%。"
+        }
+      },
+      "effect": "攻擊力 29；祟抗性 +10%。",
+      "damage": 29
+    },
+    "moonKodachi": {
+      "key": "moonKodachi",
+      "id": "moonKodachi",
+      "name": "月影小太刀",
+      "displayName": "月影小太刀",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "weapon",
+      "icon": "月",
+      "image": "./images/items/moonKodachi.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 39,
+          "stats": {
+            "yuuDamageBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 39；遊狀態下傷害 +20%。"
+        },
+        "first": {
+          "baseDamage": 48,
+          "stats": {
+            "yuuDamageBonusPct": 40
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 48；遊狀態下傷害 +40%。"
+        },
+        "second": {
+          "baseDamage": 57,
+          "stats": {
+            "yuuDamageBonusPct": 60
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 57；遊狀態下傷害 +60%。"
+        },
+        "third": {
+          "baseDamage": 66,
+          "stats": {
+            "yuuDamageBonusPct": 80
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 66；遊狀態下傷害 +80%。"
+        },
+        "fourth": {
+          "baseDamage": 75,
+          "stats": {
+            "yuuDamageBonusPct": 100
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 75；遊狀態下傷害 +100%。"
+        },
+        "true": {
+          "baseDamage": 90,
+          "stats": {
+            "yuuDamageBonusPct": 100,
+            "critRateBonusPct": 7
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 90；遊狀態下傷害 +100%，爆擊率 +7%。"
+        }
+      },
+      "effect": "攻擊力 39；遊狀態下傷害 +20%。",
+      "damage": 39
+    },
+    "riftLongBlade": {
+      "key": "riftLongBlade",
+      "id": "riftLongBlade",
+      "name": "裂願長刀",
+      "displayName": "裂願長刀",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "weapon",
+      "icon": "裂",
+      "image": "./images/items/riftLongBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 36,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 35,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 36；敵人生命低於 35% 時，攻擊力 +50%。"
+        },
+        "first": {
+          "baseDamage": 45,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 45,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 45；敵人生命低於 45% 時，攻擊力 +50%。"
+        },
+        "second": {
+          "baseDamage": 54,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 55,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 54；敵人生命低於 55% 時，攻擊力 +50%。"
+        },
+        "third": {
+          "baseDamage": 63,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 65,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 63；敵人生命低於 65% 時，攻擊力 +50%。"
+        },
+        "fourth": {
+          "baseDamage": 72,
+          "stats": {},
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 75,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 72；敵人生命低於 75% 時，攻擊力 +50%。"
+        },
+        "true": {
+          "baseDamage": 86,
+          "stats": {
+            "critDamageBonusPct": 50
+          },
+          "specialEffects": {
+            "enemyHpThresholdAttackBonus": {
+              "thresholdPct": 75,
+              "attackBonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 86；敵人生命低於 75% 時，攻擊力 +50%，爆擊傷害 +50%。"
+        }
+      },
+      "effect": "攻擊力 36；敵人生命低於 35% 時，攻擊力 +50%。",
+      "damage": 36
+    },
+    "scarletSakuraTachi": {
+      "key": "scarletSakuraTachi",
+      "id": "scarletSakuraTachi",
+      "name": "緋櫻太刀",
+      "displayName": "緋櫻太刀",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "weapon",
+      "icon": "櫻",
+      "image": "./images/items/scarletSakuraTachi.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 61,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 50
+            }
+          },
+          "playerDescription": "攻擊力 61；每第三擊釋放小範圍斬擊，造成攻擊力 50% 傷害。"
+        },
+        "first": {
+          "baseDamage": 75,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 70
+            }
+          },
+          "playerDescription": "攻擊力 75；每第三擊釋放小範圍斬擊，造成攻擊力 70% 傷害。"
+        },
+        "second": {
+          "baseDamage": 89,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 90
+            }
+          },
+          "playerDescription": "攻擊力 89；每第三擊釋放小範圍斬擊，造成攻擊力 90% 傷害。"
+        },
+        "third": {
+          "baseDamage": 103,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 110
+            }
+          },
+          "playerDescription": "攻擊力 103；每第三擊釋放小範圍斬擊，造成攻擊力 110% 傷害。"
+        },
+        "fourth": {
+          "baseDamage": 117,
+          "stats": {},
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 130
+            }
+          },
+          "playerDescription": "攻擊力 117；每第三擊釋放小範圍斬擊，造成攻擊力 130% 傷害。"
+        },
+        "true": {
+          "baseDamage": 140,
+          "stats": {
+            "critRateBonusPct": 10
+          },
+          "specialEffects": {
+            "everyNthAttackWave": {
+              "nth": 3,
+              "damagePct": 150
+            }
+          },
+          "playerDescription": "攻擊力 140；每第三擊釋放小範圍斬擊，造成攻擊力 150% 傷害，爆擊率 +10%。"
+        }
+      },
+      "effect": "攻擊力 61；每第三擊釋放小範圍斬擊，造成攻擊力 50% 傷害。",
+      "damage": 61
+    },
+    "formlessBlade": {
+      "key": "formlessBlade",
+      "id": "formlessBlade",
+      "name": "無相之刃",
+      "displayName": "無相之刃",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "weapon",
+      "icon": "相",
+      "image": "./images/items/formlessBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 59,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 59；對「相」階段的破除速度 +50%。"
+        },
+        "first": {
+          "baseDamage": 73,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 55
+            }
+          },
+          "playerDescription": "攻擊力 73；對「相」階段的破除速度 +55%。"
+        },
+        "second": {
+          "baseDamage": 87,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 60
+            }
+          },
+          "playerDescription": "攻擊力 87；對「相」階段的破除速度 +60%。"
+        },
+        "third": {
+          "baseDamage": 101,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 65
+            }
+          },
+          "playerDescription": "攻擊力 101；對「相」階段的破除速度 +65%。"
+        },
+        "fourth": {
+          "baseDamage": 115,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 70
+            }
+          },
+          "playerDescription": "攻擊力 115；對「相」階段的破除速度 +70%。"
+        },
+        "true": {
+          "baseDamage": 137,
+          "stats": {},
+          "specialEffects": {
+            "phaseBreakSpeedBonus": {
+              "phase": "aspect",
+              "bonusPct": 75
+            },
+            "yuuMoveSpeedBonusPct": 20
+          },
+          "playerDescription": "攻擊力 137；對「相」階段的破除速度 +75%，遊狀態下移動速度 +20%。"
+        }
+      },
+      "effect": "攻擊力 59；對「相」階段的破除速度 +50%。",
+      "damage": 59
+    },
+    "severanceNaginata": {
+      "key": "severanceNaginata",
+      "id": "severanceNaginata",
+      "name": "斷念薙刀",
+      "displayName": "斷念薙刀",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "weapon",
+      "icon": "斷",
+      "image": "./images/items/severanceNaginata.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 91,
+          "stats": {
+            "attackBonusPct": 18
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 91；攻擊力加成 +18%。"
+        },
+        "first": {
+          "baseDamage": 116,
+          "stats": {
+            "attackBonusPct": 27
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 116；攻擊力加成 +27%。"
+        },
+        "second": {
+          "baseDamage": 141,
+          "stats": {
+            "attackBonusPct": 36
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 141；攻擊力加成 +36%。"
+        },
+        "third": {
+          "baseDamage": 166,
+          "stats": {
+            "attackBonusPct": 45
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 166；攻擊力加成 +45%。"
+        },
+        "fourth": {
+          "baseDamage": 191,
+          "stats": {
+            "attackBonusPct": 54
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 191；攻擊力加成 +54%。"
+        },
+        "true": {
+          "baseDamage": 225,
+          "stats": {
+            "attackBonusPct": 60,
+            "critDamageBonusPct": 50
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力 225；攻擊力加成 +60%，爆擊傷害 +50%。"
+        }
+      },
+      "effect": "攻擊力 91；攻擊力加成 +18%。",
+      "damage": 91
+    },
+    "tsukishitaHaraiBlade": {
+      "key": "tsukishitaHaraiBlade",
+      "id": "tsukishitaHaraiBlade",
+      "name": "月下祓刀",
+      "displayName": "月下祓刀",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "weapon",
+      "icon": "祓",
+      "image": "./images/items/tsukishitaHaraiBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 91,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 50
+            }
+          },
+          "playerDescription": "攻擊力 91；戰鬥開始時獲得相當於最大生命 50% 的護盾。"
+        },
+        "first": {
+          "baseDamage": 116,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 70
+            }
+          },
+          "playerDescription": "攻擊力 116；戰鬥開始時獲得相當於最大生命 70% 的護盾。"
+        },
+        "second": {
+          "baseDamage": 141,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 90
+            }
+          },
+          "playerDescription": "攻擊力 141；戰鬥開始時獲得相當於最大生命 90% 的護盾。"
+        },
+        "third": {
+          "baseDamage": 166,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 110
+            }
+          },
+          "playerDescription": "攻擊力 166；戰鬥開始時獲得相當於最大生命 110% 的護盾。"
+        },
+        "fourth": {
+          "baseDamage": 191,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 130
+            }
+          },
+          "playerDescription": "攻擊力 191；戰鬥開始時獲得相當於最大生命 130% 的護盾。"
+        },
+        "true": {
+          "baseDamage": 225,
+          "stats": {},
+          "specialEffects": {
+            "battleStartShield": {
+              "shieldMaxHpPct": 150,
+              "shieldBreakDefenseDamagePct": 50
+            }
+          },
+          "playerDescription": "攻擊力 225；戰鬥開始時獲得相當於最大生命 150% 的護盾。護盾碎裂時，對執念造成相當於其 50% 防禦力的碎裂傷害。"
+        }
+      },
+      "effect": "攻擊力 91；戰鬥開始時獲得相當於最大生命 50% 的護盾。",
+      "damage": 91
+    },
+    "finalMoon": {
+      "key": "finalMoon",
+      "id": "finalMoon",
+      "name": "祓行・終月",
+      "displayName": "祓行・終月",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "weapon",
+      "icon": "終",
+      "image": "./images/items/finalMoon.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 120,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 3
+            }
+          },
+          "playerDescription": "攻擊力 120；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +3%。"
+        },
+        "first": {
+          "baseDamage": 150,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 4
+            }
+          },
+          "playerDescription": "攻擊力 150；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +4%。"
+        },
+        "second": {
+          "baseDamage": 180,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 5
+            }
+          },
+          "playerDescription": "攻擊力 180；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +5%。"
+        },
+        "third": {
+          "baseDamage": 210,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 6
+            }
+          },
+          "playerDescription": "攻擊力 210；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +6%。"
+        },
+        "fourth": {
+          "baseDamage": 240,
+          "stats": {},
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 7
+            }
+          },
+          "playerDescription": "攻擊力 240；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +7%。"
+        },
+        "true": {
+          "baseDamage": 280,
+          "stats": {
+            "critDamageBonusPct": 8
+          },
+          "specialEffects": {
+            "circleStayAttackRamp": {
+              "staySeconds": 10,
+              "intervalSeconds": 3,
+              "attackBonusPct": 8
+            }
+          },
+          "playerDescription": "攻擊力 280；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +8%，爆擊傷害 +8%。"
+        }
+      },
+      "effect": "攻擊力 120；在紅圈內連續 10 秒未離場後，每 3 秒攻擊力 +3%。",
+      "damage": 120
+    },
+    "noWishBlade": {
+      "key": "noWishBlade",
+      "id": "noWishBlade",
+      "name": "無願之刃",
+      "displayName": "無願之刃",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "weapon",
+      "icon": "無",
+      "image": "./images/items/noWishBlade.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "baseDamage": 140,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 10,
+              "skillRateSlowPct": 10,
+              "moveSpeedSlowPct": 10,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 140；執念攻擊速度與技能頻率降低 10%，玩家免疫執念的攻速干擾。"
+        },
+        "first": {
+          "baseDamage": 170,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 20,
+              "skillRateSlowPct": 20,
+              "moveSpeedSlowPct": 20,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 170；執念攻擊速度與技能頻率降低 20%，玩家免疫執念的攻速干擾。"
+        },
+        "second": {
+          "baseDamage": 200,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 30,
+              "skillRateSlowPct": 30,
+              "moveSpeedSlowPct": 30,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 200；執念攻擊速度與技能頻率降低 30%，玩家免疫執念的攻速干擾。"
+        },
+        "third": {
+          "baseDamage": 230,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 40,
+              "skillRateSlowPct": 40,
+              "moveSpeedSlowPct": 40,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 230；執念攻擊速度與技能頻率降低 40%，玩家免疫執念的攻速干擾。"
+        },
+        "fourth": {
+          "baseDamage": 260,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 50,
+              "skillRateSlowPct": 50,
+              "moveSpeedSlowPct": 50,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 260；執念攻擊速度與技能頻率降低 50%，玩家免疫執念的攻速干擾。"
+        },
+        "true": {
+          "baseDamage": 280,
+          "stats": {},
+          "specialEffects": {
+            "enemyActionSlow": {
+              "attackSpeedSlowPct": 60,
+              "skillRateSlowPct": 60,
+              "moveSpeedSlowPct": 60,
+              "immuneAttackSpeedInterference": true
+            }
+          },
+          "playerDescription": "攻擊力 280；執念攻擊速度與技能頻率降低 60%，玩家免疫執念的攻速干擾。"
+        }
+      },
+      "effect": "攻擊力 140；執念攻擊速度與技能頻率降低 10%，玩家免疫執念的攻速干擾。",
+      "damage": 140
+    },
+    "plainOmamori": {
+      "key": "plainOmamori",
+      "id": "plainOmamori",
+      "name": "素白御守",
+      "displayName": "素白御守",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "prayer",
+      "icon": "守",
+      "image": "./images/items/plainOmamori.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "maxHpFlat": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +15。"
+        },
+        "first": {
+          "stats": {
+            "maxHpFlat": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +25。"
+        },
+        "second": {
+          "stats": {
+            "maxHpFlat": 45
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +45。"
+        },
+        "third": {
+          "stats": {
+            "maxHpFlat": 75
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +75。"
+        },
+        "fourth": {
+          "stats": {
+            "maxHpFlat": 135
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +135。"
+        },
+        "true": {
+          "stats": {
+            "maxHpFlat": 235
+          },
+          "specialEffects": {},
+          "playerDescription": "最大生命 +235。"
+        }
+      },
+      "effect": "最大生命 +15。"
+    },
+    "travelerPlaque": {
+      "key": "travelerPlaque",
+      "id": "travelerPlaque",
+      "name": "旅人木牌",
+      "displayName": "旅人木牌",
+      "rarity": "white",
+      "rarityDisplay": "白",
+      "category": "prayer",
+      "icon": "牌",
+      "image": "./images/items/travelerPlaque.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "moveSpeedBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +5%。"
+        },
+        "first": {
+          "stats": {
+            "moveSpeedBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +10%。"
+        },
+        "second": {
+          "stats": {
+            "moveSpeedBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +15%。"
+        },
+        "third": {
+          "stats": {
+            "moveSpeedBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +20%。"
+        },
+        "fourth": {
+          "stats": {
+            "moveSpeedBonusPct": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +25%。"
+        },
+        "true": {
+          "stats": {
+            "moveSpeedBonusPct": 35
+          },
+          "specialEffects": {},
+          "playerDescription": "移動速度 +35%。"
+        }
+      },
+      "effect": "移動速度 +5%。"
+    },
+    "aobaEma": {
+      "key": "aobaEma",
+      "id": "aobaEma",
+      "name": "青葉繪馬",
+      "displayName": "青葉繪馬",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "prayer",
+      "icon": "繪",
+      "image": "./images/items/aobaEma.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "expBonusPct": 10,
+            "maxHpBonusPct": 5
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +10%，最大生命 +5%。"
+        },
+        "first": {
+          "stats": {
+            "expBonusPct": 15,
+            "maxHpBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +15%，最大生命 +10%。"
+        },
+        "second": {
+          "stats": {
+            "expBonusPct": 20,
+            "maxHpBonusPct": 15
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +20%，最大生命 +15%。"
+        },
+        "third": {
+          "stats": {
+            "expBonusPct": 25,
+            "maxHpBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +25%，最大生命 +20%。"
+        },
+        "fourth": {
+          "stats": {
+            "expBonusPct": 30,
+            "maxHpBonusPct": 25
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +30%，最大生命 +25%。"
+        },
+        "true": {
+          "stats": {
+            "expBonusPct": 35,
+            "maxHpBonusPct": 35
+          },
+          "specialEffects": {},
+          "playerDescription": "戰鬥結束後經驗 +35%，最大生命 +35%。"
+        }
+      },
+      "effect": "戰鬥結束後經驗 +10%，最大生命 +5%。"
+    },
+    "smallHaraiBell": {
+      "key": "smallHaraiBell",
+      "id": "smallHaraiBell",
+      "name": "小祓鈴",
+      "displayName": "小祓鈴",
+      "rarity": "green",
+      "rarityDisplay": "綠",
+      "category": "prayer",
+      "icon": "鈴",
+      "image": "./images/items/smallHaraiBell.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 20
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 20% 的生命。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 30
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 30% 的生命。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 40
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 40% 的生命。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 50
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 50% 的生命。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 60
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 60% 的生命。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "healOnAttack": {
+              "cooldownSeconds": 7,
+              "healFromDamagePct": 90
+            }
+          },
+          "playerDescription": "每 7 秒一次，攻擊後恢復相當於造成傷害 90% 的生命。"
+        }
+      },
+      "effect": "每 7 秒一次，攻擊後恢復相當於造成傷害 20% 的生命。"
+    },
+    "stillWaterBeads": {
+      "key": "stillWaterBeads",
+      "id": "stillWaterBeads",
+      "name": "靜水念珠",
+      "displayName": "靜水念珠",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "prayer",
+      "icon": "珠",
+      "image": "./images/items/stillWaterBeads.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 10,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -10%，並免疫觸碰造成的傷害。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 20,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -20%，並免疫觸碰造成的傷害。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 30,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -30%，並免疫觸碰造成的傷害。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 40,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -40%，並免疫觸碰造成的傷害。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 50,
+            "touchDamageImmunity": true
+          },
+          "playerDescription": "執念移動速度 -50%，並免疫觸碰造成的傷害。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "enemyMoveSpeedSlowPct": 60,
+            "touchDamageImmunity": true,
+            "periodicDamageImmunitySeconds": 15
+          },
+          "playerDescription": "執念移動速度 -60%，並免疫觸碰造成的傷害。每 15 秒免疫一次傷害。"
+        }
+      },
+      "effect": "執念移動速度 -10%，並免疫觸碰造成的傷害。"
+    },
+    "returnSoulKnot": {
+      "key": "returnSoulKnot",
+      "id": "returnSoulKnot",
+      "name": "返魂結",
+      "displayName": "返魂結",
+      "rarity": "blue",
+      "rarityDisplay": "藍",
+      "category": "prayer",
+      "icon": "結",
+      "image": "./images/items/returnSoulKnot.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 1 次。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 2
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 2 次。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 3
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 3 次。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 4
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 4 次。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 50,
+              "maxTriggers": 5
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 5 次。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "autoHealOnLowHp": {
+              "thresholdPct": 25,
+              "healMaxHpPct": 75,
+              "maxTriggers": 5
+            }
+          },
+          "playerDescription": "生命低於 25% 時，自動恢復 75% 最大生命，戰鬥中限 5 次。"
+        }
+      },
+      "effect": "生命低於 25% 時，自動恢復 50% 最大生命，戰鬥中限 1 次。"
+    },
+    "moonSachet": {
+      "key": "moonSachet",
+      "id": "moonSachet",
+      "name": "月見香袋",
+      "displayName": "月見香袋",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "prayer",
+      "icon": "香",
+      "image": "./images/items/moonSachet.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 20
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +20%。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 30
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +30%。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 40
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +40%。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 50
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +50%。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 60
+          },
+          "playerDescription": "執念進入新階段時，玩家移動速度 +60%。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "phaseTransitionMoveSpeedBonusPct": 60,
+            "yuuUntilBattleEndOnPhaseShift": true,
+            "yuuNoForceDrain": true
+          },
+          "playerDescription": "執念進入新階段後，玩家進入遊狀態直到戰鬥結束；期間遊不消耗勢。"
+        }
+      },
+      "effect": "執念進入新階段時，玩家移動速度 +20%。"
+    },
+    "obsessionOrb": {
+      "key": "obsessionOrb",
+      "id": "obsessionOrb",
+      "name": "破執玉",
+      "displayName": "破執玉",
+      "rarity": "purple",
+      "rarityDisplay": "紫",
+      "category": "prayer",
+      "icon": "玉",
+      "image": "./images/items/obsessionOrb.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "attackBonusPct": 20
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +20%。"
+        },
+        "first": {
+          "stats": {
+            "attackBonusPct": 30
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +30%。"
+        },
+        "second": {
+          "stats": {
+            "attackBonusPct": 40
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +40%。"
+        },
+        "third": {
+          "stats": {
+            "attackBonusPct": 50
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +50%。"
+        },
+        "fourth": {
+          "stats": {
+            "attackBonusPct": 60
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +60%。"
+        },
+        "true": {
+          "stats": {
+            "attackBonusPct": 70,
+            "critRateBonusPct": 10
+          },
+          "specialEffects": {},
+          "playerDescription": "攻擊力加成 +70%，爆擊率 +10%。"
+        }
+      },
+      "effect": "攻擊力加成 +20%。"
+    },
+    "kaguraBell": {
+      "key": "kaguraBell",
+      "id": "kaguraBell",
+      "name": "神樂鈴",
+      "displayName": "神樂鈴",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "prayer",
+      "icon": "鈴",
+      "image": "./images/items/kaguraBell.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 80,
+              "damagePct": 45
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 80，造成攻擊力 45% 傷害。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 85,
+              "damagePct": 50
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 85，造成攻擊力 50% 傷害。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 90,
+              "damagePct": 55
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 90，造成攻擊力 55% 傷害。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 95,
+              "damagePct": 60
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 95，造成攻擊力 60% 傷害。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 100,
+              "damagePct": 65
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 100，造成攻擊力 65% 傷害。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "passivePulse": {
+              "intervalSeconds": 3,
+              "radius": 120,
+              "damagePct": 70
+            }
+          },
+          "playerDescription": "每 3 秒自動產生祓力波動，半徑 120，造成攻擊力 70% 傷害。"
+        }
+      },
+      "effect": "每 3 秒自動產生祓力波動，半徑 80，造成攻擊力 45% 傷害。"
+    },
+    "mirrorShard": {
+      "key": "mirrorShard",
+      "id": "mirrorShard",
+      "name": "御神鏡碎片",
+      "displayName": "御神鏡碎片",
+      "rarity": "gold",
+      "rarityDisplay": "金",
+      "category": "prayer",
+      "icon": "鏡",
+      "image": "./images/items/mirrorShard.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 3,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 3 秒無敵。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 6,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 6 秒無敵。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 9,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 9 秒無敵。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 12,
+              "maxTriggers": 1
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 12 秒無敵。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 12,
+              "maxTriggers": 2
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 12 秒無敵；戰鬥中可觸發 2 次。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "reviveOnDeath": {
+              "reviveHpPct": 100,
+              "invulnerabilitySeconds": 12,
+              "maxTriggers": 3,
+              "shockwaveRadius": 300,
+              "shockwaveDamagePct": 300
+            }
+          },
+          "playerDescription": "血量歸零時立即恢復滿生命，並獲得 12 秒無敵；戰鬥中可觸發 3 次。觸發時釋放半徑 300 的衝擊波，造成攻擊力 300% 傷害。"
+        }
+      },
+      "effect": "血量歸零時立即恢復滿生命，並獲得 3 秒無敵。"
+    },
+    "roseGoldEma": {
+      "key": "roseGoldEma",
+      "id": "roseGoldEma",
+      "name": "桜繪馬",
+      "displayName": "桜繪馬",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "prayer",
+      "icon": "桜",
+      "image": "./images/items/roseGoldEma.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.2,
+              "gold": 0.8,
+              "purple": 9,
+              "blue": 30,
+              "green": 30,
+              "white": 30
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.2%，金 0.8%，紫 9%，藍 30%，綠 30%，白 30%。"
+        },
+        "first": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.3,
+              "gold": 1.2,
+              "purple": 13.5,
+              "blue": 30,
+              "green": 30,
+              "white": 25
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.3%，金 1.2%，紫 13.5%，藍 30%，綠 30%，白 25%。"
+        },
+        "second": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.4,
+              "gold": 1.6,
+              "purple": 18,
+              "blue": 30,
+              "green": 30,
+              "white": 20
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.4%，金 1.6%，紫 18%，藍 30%，綠 30%，白 20%。"
+        },
+        "third": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.5,
+              "gold": 2,
+              "purple": 22.5,
+              "blue": 30,
+              "green": 30,
+              "white": 15
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.5%，金 2.0%，紫 22.5%，藍 30%，綠 30%，白 15%。"
+        },
+        "fourth": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.6,
+              "gold": 2.4,
+              "purple": 27,
+              "blue": 30,
+              "green": 30,
+              "white": 10
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.6%，金 2.4%，紫 27%，藍 30%，綠 30%，白 10%。"
+        },
+        "true": {
+          "stats": {},
+          "specialEffects": {
+            "shrineWishRateModifier": {
+              "roseGold": 0.7,
+              "gold": 2.8,
+              "purple": 31.5,
+              "blue": 35,
+              "green": 25,
+              "white": 5
+            }
+          },
+          "playerDescription": "祈願品質機率：玫瑰金 0.7%，金 2.8%，紫 31.5%，藍 35%，綠 25%，白 5%。"
+        }
+      },
+      "effect": "祈願品質機率：玫瑰金 0.2%，金 0.8%，紫 9%，藍 30%，綠 30%，白 30%。"
+    },
+    "formlessWishBead": {
+      "key": "formlessWishBead",
+      "id": "formlessWishBead",
+      "name": "無相願珠",
+      "displayName": "無相願珠",
+      "rarity": "roseGold",
+      "rarityDisplay": "玫瑰金",
+      "category": "prayer",
+      "icon": "願",
+      "image": "./images/items/formlessWishBead.png",
+      "donation": true,
+      "initial": false,
+      "max": 1,
+      "resonance": {
+        "none": {
+          "stats": {
+            "attackBonusPct": 30
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 400
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 400，攻擊力加成 +30%。"
+        },
+        "first": {
+          "stats": {
+            "attackBonusPct": 40
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 500
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 500，攻擊力加成 +40%。"
+        },
+        "second": {
+          "stats": {
+            "attackBonusPct": 50
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 600
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 600，攻擊力加成 +50%。"
+        },
+        "third": {
+          "stats": {
+            "attackBonusPct": 60
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 700
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 700，攻擊力加成 +60%。"
+        },
+        "fourth": {
+          "stats": {
+            "attackBonusPct": 70
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 800
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 800，攻擊力加成 +70%。"
+        },
+        "true": {
+          "stats": {
+            "attackBonusPct": 80,
+            "critDamageBonusPct": 20
+          },
+          "specialEffects": {
+            "phaseAreaRadiusModifier": {
+              "radius": 900
+            }
+          },
+          "playerDescription": "「相」與「願」的範圍變成半徑 900，攻擊力加成 +80%，爆擊傷害 +20%。"
+        }
+      },
+      "effect": "「相」與「願」的範圍變成半徑 400，攻擊力加成 +30%。"
+    },
+    "roughHerb": {
+      "max": 99,
+      "donation": true,
+      "key": "roughHerb",
+      "name": "粗製草藥",
+      "rarity": "white",
+      "category": "special",
+      "icon": "草",
+      "effect": "恢復40HP",
+      "consumable": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/roughHerb.png"
+    },
+    "clearWaterBamboo": {
+      "max": 99,
+      "donation": true,
+      "key": "clearWaterBamboo",
+      "name": "清水竹筒",
+      "rarity": "white",
+      "category": "special",
+      "icon": "水",
+      "effect": "減少20%的祟",
+      "consumable": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/clearWaterBamboo.png"
+    },
+    "haraiPaper": {
+      "max": 99,
+      "donation": true,
+      "key": "haraiPaper",
+      "name": "祓紙",
+      "rarity": "green",
+      "category": "special",
+      "icon": "紙",
+      "effect": "30秒內傷害+15%",
+      "consumable": true,
+      "rarityDisplay": "綠",
+      "image": "./images/items/haraiPaper.png"
+    },
+    "spiritSalt": {
+      "max": 99,
+      "donation": true,
+      "key": "spiritSalt",
+      "name": "靈鹽",
+      "rarity": "green",
+      "category": "special",
+      "icon": "鹽",
+      "effect": "讓Boss下一次技能傷害降低90%",
+      "consumable": true,
+      "rarityDisplay": "綠",
+      "image": "./images/items/spiritSalt.png"
+    },
+    "moonDewForce": {
+      "max": 99,
+      "donation": true,
+      "key": "moonDewForce",
+      "name": "月露藥・勢",
+      "rarity": "green",
+      "category": "special",
+      "icon": "勢",
+      "effect": "恢復50點勢",
+      "consumable": true,
+      "rarityDisplay": "綠",
+      "image": "./images/items/moonDewForce.png"
+    },
+    "evilBreakingTalisman": {
+      "max": 99,
+      "donation": true,
+      "key": "evilBreakingTalisman",
+      "name": "破邪符",
+      "rarity": "blue",
+      "category": "special",
+      "icon": "符",
+      "effect": "立刻打斷小型執念的蓄力並眩暈執念4秒",
+      "consumable": true,
+      "rarityDisplay": "藍",
+      "image": "./images/items/evilBreakingTalisman.png"
+    },
+    "shrineSake": {
+      "max": 99,
+      "donation": true,
+      "key": "shrineSake",
+      "name": "神社御酒",
+      "rarity": "purple",
+      "category": "special",
+      "icon": "酒",
+      "effect": "恢復大量生命",
+      "consumable": true,
+      "rarityDisplay": "紫",
+      "image": "./images/items/shrineSake.png"
+    },
+    "calmingIncense": {
+      "max": 99,
+      "donation": true,
+      "key": "calmingIncense",
+      "name": "靜心香",
+      "rarity": "purple",
+      "category": "special",
+      "icon": "香",
+      "effect": "降低Boss技能頻率40%",
+      "consumable": true,
+      "rarityDisplay": "紫",
+      "image": "./images/items/calmingIncense.png"
+    },
+    "moonPill": {
+      "max": 3,
+      "donation": true,
+      "key": "moonPill",
+      "name": "月華丹",
+      "rarity": "gold",
+      "category": "special",
+      "icon": "丹",
+      "effect": "恢復50%生命並無敵7秒",
+      "consumable": true,
+      "rarityDisplay": "金",
+      "image": "./images/items/moonPill.png"
+    },
+    "returnWishTalisman": {
+      "max": 3,
+      "donation": true,
+      "key": "returnWishTalisman",
+      "name": "返願符",
+      "rarity": "roseGold",
+      "category": "special",
+      "icon": "返",
+      "effect": "化解一次相或願階段的執念",
+      "consumable": true,
+      "rarityDisplay": "玫瑰金",
+      "image": "./images/items/returnWishTalisman.png"
+    },
+    "ore": {
+      "max": 999999,
+      "donation": false,
+      "key": "ore",
+      "name": "礦石",
+      "rarity": "white",
+      "category": "special",
+      "icon": "礦",
+      "effect": "打鐵用的基礎材料。",
+      "stackable": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/ore.png"
+    },
+    "pureIncenseCandle": {
+      "max": 99,
+      "donation": false,
+      "key": "pureIncenseCandle",
+      "name": "淨念香燭",
+      "rarity": "white",
+      "category": "special",
+      "icon": "燭",
+      "effect": "可在墓碑前結緣，使墓碑成為已解鎖的紀錄物。",
+      "consumable": true,
+      "shopInfinite": true,
+      "rarityDisplay": "白",
+      "image": "./images/items/pureIncenseCandle.png"
+    },
+    "blade": {
+      "max": 3,
+      "donation": false,
+      "key": "blade",
+      "name": "破邪刀",
+      "rarity": "white",
+      "category": "weapon",
+      "icon": "舊",
+      "effect": "舊道具：斬擊威力小幅上升",
+      "legacy": true,
+      "damage": 24,
+      "damagePerLevel": 0.18,
+      "rarityDisplay": "白",
+      "image": "./images/items/blade.png"
+    },
+    "amulet": {
+      "max": 3,
+      "donation": false,
+      "key": "amulet",
+      "name": "鎮祟守",
+      "rarity": "white",
+      "category": "prayer",
+      "icon": "舊",
+      "effect": "舊道具：祟累積減緩",
+      "legacy": true,
+      "pollutionReductionPerLevel": 0.16,
+      "rarityDisplay": "白",
+      "image": "./images/items/amulet.png"
+    },
+    "armor": {
+      "max": 3,
+      "donation": false,
+      "key": "armor",
+      "name": "守鎧",
+      "rarity": "white",
+      "category": "special",
+      "icon": "舊",
+      "effect": "舊道具：受傷減輕",
+      "legacy": true,
+      "armorReductionPerLevel": 0.14,
+      "rarityDisplay": "白",
+      "image": "./images/items/armor.png"
+    }
+  },
+  "inventoryDefault": {
+    "rottenUchigatana": {
+      "copies": [
+        0
+      ]
+    },
+    "villageDagger": {
+      "copies": []
+    },
+    "bronzeTachi": {
+      "copies": []
+    },
+    "suzuNaginata": {
+      "copies": []
+    },
+    "moonKodachi": {
+      "copies": []
+    },
+    "riftLongBlade": {
+      "copies": []
+    },
+    "scarletSakuraTachi": {
+      "copies": []
+    },
+    "formlessBlade": {
+      "copies": []
+    },
+    "severanceNaginata": {
+      "copies": []
+    },
+    "tsukishitaHaraiBlade": {
+      "copies": []
+    },
+    "finalMoon": {
+      "copies": []
+    },
+    "noWishBlade": {
+      "copies": []
+    },
+    "plainOmamori": {
+      "copies": []
+    },
+    "travelerPlaque": {
+      "copies": []
+    },
+    "aobaEma": {
+      "copies": []
+    },
+    "smallHaraiBell": {
+      "copies": []
+    },
+    "stillWaterBeads": {
+      "copies": []
+    },
+    "returnSoulKnot": {
+      "copies": []
+    },
+    "moonSachet": {
+      "copies": []
+    },
+    "obsessionOrb": {
+      "copies": []
+    },
+    "kaguraBell": {
+      "copies": []
+    },
+    "mirrorShard": {
+      "copies": []
+    },
+    "roseGoldEma": {
+      "copies": []
+    },
+    "formlessWishBead": {
+      "copies": []
+    },
+    "roughHerb": {
+      "quantity": 0
+    },
+    "clearWaterBamboo": {
+      "quantity": 0
+    },
+    "haraiPaper": {
+      "quantity": 0
+    },
+    "spiritSalt": {
+      "quantity": 0
+    },
+    "moonDewForce": {
+      "quantity": 0
+    },
+    "evilBreakingTalisman": {
+      "quantity": 0
+    },
+    "shrineSake": {
+      "quantity": 0
+    },
+    "calmingIncense": {
+      "quantity": 0
+    },
+    "moonPill": {
+      "quantity": 0
+    },
+    "returnWishTalisman": {
+      "quantity": 0
+    },
+    "ore": {
+      "quantity": 0
+    },
+    "pureIncenseCandle": {
+      "quantity": 0
+    },
+    "blade": {
+      "copies": []
+    },
+    "amulet": {
+      "copies": []
+    },
+    "armor": {
+      "copies": []
+    }
+  },
+  "resonanceTierOrder": [
+    "none",
+    "first",
+    "second",
+    "third",
+    "fourth",
+    "true"
+  ],
+  "resonanceTierLabels": {
+    "none": "無",
+    "first": "初",
+    "second": "二",
+    "third": "三",
+    "fourth": "四",
+    "true": "真"
+  },
+  "resonanceLevelToTierKey": {
+    "0": "none",
+    "1": "first",
+    "2": "second",
+    "3": "third",
+    "4": "fourth",
+    "5": "true"
+  },
+  "resonanceTierKeyToLevel": {
+    "none": 0,
+    "first": 1,
+    "second": 2,
+    "third": 3,
+    "fourth": 4,
+    "true": 5
+  }
+}

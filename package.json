@@ -1,0 +1,18 @@
+{
+  "name": "tsukishita-game",
+  "version": "0.1.0",
+  "description": "月下祓行 — 日式和風黑暗奇幻 RPG",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "desktop": "cd tsukishita-desktop && npx tauri dev",
+    "build:desktop": "cd tsukishita-desktop && npx tauri build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/tsukishita.git"
+  },
+  "keywords": ["rpg", "japanese", "dark-fantasy", "game"],
+  "type": "commonjs",
+  "license": "UNLICENSED"
+}
